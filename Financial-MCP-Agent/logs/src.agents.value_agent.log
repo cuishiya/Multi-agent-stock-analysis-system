@@ -1,0 +1,1270 @@
+2025-08-10 10:37:27 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2025-08-10 10:37:27 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model doubao-seed-1-6-250615
+2025-08-10 10:37:27 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2025-08-10 10:37:28 - src.agents.value_agent - ERROR - ✗ ValueAgent: No MCP tools available.
+2025-08-10 10:38:08 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2025-08-10 10:38:08 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model doubao-seed-1-6-250615
+2025-08-10 10:38:08 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2025-08-10 10:38:11 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2025-08-10 10:38:11 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-08-10 10:38:11 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2025-08-10 10:38:11 - src.agents.value_agent - INFO - Agent input: 请分析茅台（股票代码：sh.600519）的估值情况。
+
+当前时间：2025年08月10日 (2025-08-10) 星期日 10:38:08
+当前日期：2025-08-10
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2025-08-10 10:38:11 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2025-08-10 10:40:17 - src.agents.value_agent - INFO - ReAct agent execution completed in 125.55 seconds
+2025-08-10 10:40:17 - src.agents.value_agent - INFO - Response messages count: 2
+2025-08-10 10:40:17 - src.agents.value_agent - INFO - AI messages count: 1
+2025-08-10 10:40:17 - src.agents.value_agent - INFO - Successfully extracted analysis from AI message.
+2025-08-10 10:40:17 - src.agents.value_agent - INFO - Final extracted analysis length: 0 characters
+2025-08-10 10:40:17 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully completed valuation analysis.
+2025-08-10 10:45:58 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2025-08-10 10:45:58 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model doubao-seed-1-6-250615
+2025-08-10 10:45:58 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2025-08-10 10:46:01 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2025-08-10 10:46:01 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-08-10 10:46:01 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2025-08-10 10:46:01 - src.agents.value_agent - INFO - Agent input: 请分析茅台（股票代码：sh.600519）的估值情况。
+
+当前时间：2025年08月10日 (2025-08-10) 星期日 10:45:57
+当前日期：2025-08-10
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2025-08-10 10:46:01 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2025-08-10 10:52:15 - src.agents.value_agent - INFO - ReAct agent execution completed in 374.32 seconds
+2025-08-10 10:52:15 - src.agents.value_agent - INFO - Response messages count: 24
+2025-08-10 10:52:15 - src.agents.value_agent - INFO - AI messages count: 7
+2025-08-10 10:52:15 - src.agents.value_agent - INFO - Successfully extracted analysis from AI message.
+2025-08-10 10:52:15 - src.agents.value_agent - INFO - Final extracted analysis length: 1934 characters
+2025-08-10 10:52:15 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully completed valuation analysis.
+2025-08-10 11:03:07 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2025-08-10 11:03:07 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model doubao-seed-1-6-250615
+2025-08-10 11:03:07 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2025-08-10 11:03:10 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2025-08-10 11:03:10 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-08-10 11:03:10 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2025-08-10 11:03:10 - src.agents.value_agent - INFO - Agent input: 请分析茅台（股票代码：sh.600519）的估值情况。
+
+当前时间：2025年08月10日 (2025-08-10) 星期日 11:03:07
+当前日期：2025-08-10
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2025-08-10 11:03:10 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2025-08-10 11:11:13 - src.agents.value_agent - INFO - ReAct agent execution completed in 482.46 seconds
+2025-08-10 11:11:13 - src.agents.value_agent - INFO - Response messages count: 30
+2025-08-10 11:11:13 - src.agents.value_agent - INFO - AI messages count: 8
+2025-08-10 11:11:13 - src.agents.value_agent - INFO - Successfully extracted analysis from AI message.
+2025-08-10 11:11:13 - src.agents.value_agent - INFO - Final extracted analysis length: 1497 characters
+2025-08-10 11:11:13 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully completed valuation analysis.
+2025-08-10 11:30:18 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2025-08-10 11:30:18 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model doubao-seed-1-6-250615
+2025-08-10 11:30:18 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2025-08-10 11:30:21 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2025-08-10 11:30:21 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-08-10 11:30:21 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2025-08-10 11:30:21 - src.agents.value_agent - INFO - Agent input: 请分析茅台（股票代码：sh.600519）的估值情况。
+
+当前时间：2025年08月10日 (2025-08-10) 星期日 11:30:17
+当前日期：2025-08-10
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2025-08-10 11:30:21 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2025-08-10 11:32:21 - src.agents.value_agent - INFO - ReAct agent execution completed in 120.52 seconds
+2025-08-10 11:32:21 - src.agents.value_agent - INFO - Response messages count: 2
+2025-08-10 11:32:21 - src.agents.value_agent - INFO - AI messages count: 1
+2025-08-10 11:32:21 - src.agents.value_agent - INFO - Successfully extracted analysis from AI message.
+2025-08-10 11:32:21 - src.agents.value_agent - INFO - Final extracted analysis length: 0 characters
+2025-08-10 11:32:21 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully completed valuation analysis.
+2025-08-10 20:44:10 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2025-08-10 20:44:10 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model doubao-seed-1-6-250615
+2025-08-10 20:44:10 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2025-08-10 20:44:12 - src.agents.value_agent - ERROR - ✗ ValueAgent: No MCP tools available.
+2025-08-10 20:45:34 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2025-08-10 20:45:34 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model doubao-seed-1-6-250615
+2025-08-10 20:45:34 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2025-08-10 20:45:36 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2025-08-10 20:45:36 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-08-10 20:45:36 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2025-08-10 20:45:36 - src.agents.value_agent - INFO - Agent input: 请分析腾讯（股票代码：sz.00700）的估值情况。
+
+当前时间：2025年08月10日 (2025-08-10) 星期日 20:45:34
+当前日期：2025-08-10
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2025-08-10 20:45:36 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2025-08-10 20:49:14 - src.agents.value_agent - INFO - ReAct agent execution completed in 218.20 seconds
+2025-08-10 20:49:14 - src.agents.value_agent - INFO - Response messages count: 7
+2025-08-10 20:49:14 - src.agents.value_agent - INFO - AI messages count: 3
+2025-08-10 20:49:14 - src.agents.value_agent - INFO - Successfully extracted analysis from AI message.
+2025-08-10 20:49:14 - src.agents.value_agent - INFO - Final extracted analysis length: 230 characters
+2025-08-10 20:49:14 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully completed valuation analysis.
+2025-08-10 20:53:12 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2025-08-10 20:53:12 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model doubao-seed-1-6-250615
+2025-08-10 20:53:12 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2025-08-10 20:53:13 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2025-08-10 20:53:13 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-08-10 20:53:13 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2025-08-10 20:53:13 - src.agents.value_agent - INFO - Agent input: 请分析腾讯（股票代码：sz.00700）的估值情况。
+
+当前时间：2025年08月10日 (2025-08-10) 星期日 20:53:11
+当前日期：2025-08-10
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2025-08-10 20:53:13 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2025-08-10 20:56:02 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2025-08-10 20:56:02 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model doubao-seed-1-6-250615
+2025-08-10 20:56:02 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2025-08-10 20:56:03 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2025-08-10 20:56:03 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-08-10 20:56:03 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2025-08-10 20:56:03 - src.agents.value_agent - INFO - Agent input: 请分析茅台（股票代码：sh.600519）的估值情况。
+
+当前时间：2025年08月10日 (2025-08-10) 星期日 20:56:01
+当前日期：2025-08-10
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2025-08-10 20:56:03 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2025-08-10 21:03:13 - src.agents.value_agent - INFO - ReAct agent execution completed in 429.71 seconds
+2025-08-10 21:03:13 - src.agents.value_agent - INFO - Response messages count: 47
+2025-08-10 21:03:13 - src.agents.value_agent - INFO - AI messages count: 10
+2025-08-10 21:03:13 - src.agents.value_agent - INFO - Successfully extracted analysis from AI message.
+2025-08-10 21:03:13 - src.agents.value_agent - INFO - Final extracted analysis length: 1962 characters
+2025-08-10 21:03:13 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully completed valuation analysis.
+2025-08-10 21:07:56 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2025-08-10 21:07:56 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model doubao-seed-1-6-250615
+2025-08-10 21:07:56 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2025-08-10 21:07:58 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2025-08-10 21:07:58 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-08-10 21:07:58 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2025-08-10 21:07:58 - src.agents.value_agent - INFO - Agent input: 请分析茅台（股票代码：sh.600519）的估值情况。
+
+当前时间：2025年08月10日 (2025-08-10) 星期日 21:07:56
+当前日期：2025-08-10
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2025-08-10 21:07:58 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2025-08-19 22:27:38 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2025-08-19 22:27:38 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model doubao-1-5-thinking-vision-pro-250428
+2025-08-19 22:27:38 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2025-08-19 22:27:40 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2025-08-19 22:27:40 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-08-19 22:27:40 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2025-08-19 22:27:40 - src.agents.value_agent - INFO - Agent input: 请分析茅台（股票代码：sh.600519）的估值情况。
+
+当前时间：2025年08月19日 (2025-08-19) 星期二 22:27:38
+当前日期：2025-08-19
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2025-08-19 22:27:40 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2025-08-19 22:28:10 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2025-08-19 22:28:10 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model doubao-1-5-thinking-vision-pro-250428
+2025-08-19 22:28:10 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2025-08-19 22:28:11 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2025-08-19 22:28:11 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-08-19 22:28:11 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2025-08-19 22:28:11 - src.agents.value_agent - INFO - Agent input: 请分析茅台（股票代码：sh.600519）的估值情况。
+
+当前时间：2025年08月19日 (2025-08-19) 星期二 22:28:10
+当前日期：2025-08-19
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2025-08-19 22:28:11 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2025-08-19 22:28:51 - src.agents.value_agent - INFO - ReAct agent execution completed in 71.10 seconds
+2025-08-19 22:28:51 - src.agents.value_agent - INFO - Response messages count: 16
+2025-08-19 22:28:51 - src.agents.value_agent - INFO - AI messages count: 8
+2025-08-19 22:28:51 - src.agents.value_agent - INFO - Successfully extracted analysis from AI message.
+2025-08-19 22:28:51 - src.agents.value_agent - INFO - Final extracted analysis length: 1083 characters
+2025-08-19 22:28:51 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully completed valuation analysis.
+2025-08-19 22:30:13 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2025-08-19 22:30:13 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model doubao-1-5-thinking-vision-pro-250428
+2025-08-19 22:30:13 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2025-08-19 22:30:14 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2025-08-19 22:30:14 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-08-19 22:30:14 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2025-08-19 22:30:14 - src.agents.value_agent - INFO - Agent input: 请分析茅台（股票代码：sh.600519）的估值情况。
+
+当前时间：2025年08月19日 (2025-08-19) 星期二 22:30:12
+当前日期：2025-08-19
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2025-08-19 22:30:14 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2025-08-19 22:30:18 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2025-08-19 22:30:18 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model doubao-1-5-thinking-vision-pro-250428
+2025-08-19 22:30:18 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2025-08-19 22:30:19 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2025-08-19 22:30:19 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-08-19 22:30:19 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2025-08-19 22:30:19 - src.agents.value_agent - INFO - Agent input: 请分析茅台（股票代码：sh.600519）的估值情况。
+
+当前时间：2025年08月19日 (2025-08-19) 星期二 22:30:18
+当前日期：2025-08-19
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2025-08-19 22:30:19 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2025-08-19 22:31:07 - src.agents.value_agent - INFO - ReAct agent execution completed in 47.90 seconds
+2025-08-19 22:31:07 - src.agents.value_agent - INFO - Response messages count: 10
+2025-08-19 22:31:07 - src.agents.value_agent - INFO - AI messages count: 5
+2025-08-19 22:31:07 - src.agents.value_agent - INFO - Successfully extracted analysis from AI message.
+2025-08-19 22:31:07 - src.agents.value_agent - INFO - Final extracted analysis length: 1174 characters
+2025-08-19 22:31:07 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully completed valuation analysis.
+2025-08-19 22:31:25 - src.agents.value_agent - ERROR - ✗ ValueAgent: Error in MCP or agent execution: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+Traceback (most recent call last):
+  File "/root/code/Finance/Financial-MCP-Agent/src/agents/value_agent.py", line 160, in value_agent
+    response = await agent.ainvoke(input_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/langgraph/pregel/main.py", line 3112, in ainvoke
+    async for chunk in self.astream(
+  File "/usr/local/lib/python3.12/dist-packages/langgraph/pregel/main.py", line 2977, in astream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-08-19 22:35:17 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2025-08-19 22:35:17 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model doubao-1-5-thinking-vision-pro-250428
+2025-08-19 22:35:17 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2025-08-19 22:35:19 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2025-08-19 22:35:19 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-08-19 22:35:19 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2025-08-19 22:35:19 - src.agents.value_agent - INFO - Agent input: 请分析茅台（股票代码：sh.600519）的估值情况。
+
+当前时间：2025年08月19日 (2025-08-19) 星期二 22:35:17
+当前日期：2025-08-19
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2025-08-19 22:35:19 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2025-08-19 22:36:31 - src.agents.value_agent - INFO - ReAct agent execution completed in 72.11 seconds
+2025-08-19 22:36:31 - src.agents.value_agent - INFO - Response messages count: 14
+2025-08-19 22:36:31 - src.agents.value_agent - INFO - AI messages count: 7
+2025-08-19 22:36:31 - src.agents.value_agent - INFO - Successfully extracted analysis from AI message.
+2025-08-19 22:36:31 - src.agents.value_agent - INFO - Final extracted analysis length: 1294 characters
+2025-08-19 22:36:31 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully completed valuation analysis.
+2025-08-19 22:45:32 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2025-08-19 22:45:32 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model doubao-1-5-thinking-vision-pro-250428
+2025-08-19 22:45:32 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2025-08-19 22:45:33 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2025-08-19 22:45:33 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-08-19 22:45:33 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2025-08-19 22:45:33 - src.agents.value_agent - INFO - Agent input: 请分析茅台（股票代码：sh.600519）的估值情况。
+
+当前时间：2025年08月19日 (2025-08-19) 星期二 22:45:31
+当前日期：2025-08-19
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2025-08-19 22:45:33 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2025-08-19 22:46:35 - src.agents.value_agent - INFO - ReAct agent execution completed in 62.13 seconds
+2025-08-19 22:46:35 - src.agents.value_agent - INFO - Response messages count: 14
+2025-08-19 22:46:35 - src.agents.value_agent - INFO - AI messages count: 7
+2025-08-19 22:46:35 - src.agents.value_agent - INFO - Successfully extracted analysis from AI message.
+2025-08-19 22:46:35 - src.agents.value_agent - INFO - Final extracted analysis length: 1278 characters
+2025-08-19 22:46:35 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully completed valuation analysis.
+2025-08-19 22:47:58 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2025-08-19 22:47:58 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model doubao-1-5-thinking-vision-pro-250428
+2025-08-19 22:47:58 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2025-08-19 22:47:59 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2025-08-19 22:47:59 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2025-08-19 22:47:59 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2025-08-19 22:47:59 - src.agents.value_agent - INFO - Agent input: 请分析茅台（股票代码：sh.600519）的估值情况。
+
+当前时间：2025年08月19日 (2025-08-19) 星期二 22:47:57
+当前日期：2025-08-19
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2025-08-19 22:47:59 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2025-08-19 22:49:32 - src.agents.value_agent - INFO - ReAct agent execution completed in 93.25 seconds
+2025-08-19 22:49:32 - src.agents.value_agent - INFO - Response messages count: 12
+2025-08-19 22:49:32 - src.agents.value_agent - INFO - AI messages count: 6
+2025-08-19 22:49:32 - src.agents.value_agent - INFO - Successfully extracted analysis from AI message.
+2025-08-19 22:49:32 - src.agents.value_agent - INFO - Final extracted analysis length: 1796 characters
+2025-08-19 22:49:32 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully completed valuation analysis.
+2026-05-11 11:42:10 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2026-05-11 11:42:10 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model Qwen3-8B
+2026-05-11 11:42:10 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2026-05-11 11:42:11 - src.agents.value_agent - ERROR - ✗ ValueAgent: No MCP tools available.
+2026-05-11 11:44:25 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2026-05-11 11:44:25 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model Qwen3-8B
+2026-05-11 11:44:25 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2026-05-11 11:44:26 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2026-05-11 11:44:26 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2026-05-11 11:44:26 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2026-05-11 11:44:26 - src.agents.value_agent - INFO - Agent input: 请分析平安银行（股票代码：sz.000001）的估值情况。
+
+当前时间：2026年05月11日 (2026-05-11) 星期一 11:44:25
+当前日期：2026-05-11
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2026-05-11 11:44:26 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2026-05-11 11:44:27 - src.agents.value_agent - ERROR - ✗ ValueAgent: Error in MCP or agent execution: Error code: 400 - {'error': {'message': '"auto" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set', 'type': 'BadRequestError', 'param': None, 'code': 400}}
+Traceback (most recent call last):
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/value_agent.py", line 160, in value_agent
+    response = await agent.ainvoke(input_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3535, in ainvoke
+    async for chunk in self.astream(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3181, in astream
+    async for _ in runner.atick(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 464, in ainvoke
+    ret = await asyncio.create_task(coro, context=context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 707, in acall_model
+    response = cast(AIMessage, await static_model.ainvoke(model_input, config))  # type: ignore[union-attr]
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3255, in ainvoke
+    input_ = await coro_with_context(part(), context, create_task=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 5766, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 495, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1763, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1721, in agenerate
+    raise exceptions[0]
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 2056, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1923, in _agenerate
+    _handle_openai_bad_request(e)
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1918, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_legacy_response.py", line 384, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 2739, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1931, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1716, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': '"auto" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set', 'type': 'BadRequestError', 'param': None, 'code': 400}}
+During task with name 'agent' and id '1b5dde5a-d441-bde3-4ac4-fcd7663e9f42'
+2026-05-11 11:45:02 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2026-05-11 11:45:02 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model Qwen3-8B
+2026-05-11 11:45:02 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2026-05-11 11:45:03 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2026-05-11 11:45:03 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2026-05-11 11:45:03 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2026-05-11 11:45:03 - src.agents.value_agent - INFO - Agent input: 请分析平安银行（股票代码：sz.000001）的估值情况。
+
+当前时间：2026年05月11日 (2026-05-11) 星期一 11:45:02
+当前日期：2026-05-11
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2026-05-11 11:45:03 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2026-05-11 11:45:03 - src.agents.value_agent - ERROR - ✗ ValueAgent: Error in MCP or agent execution: Error code: 400 - {'error': {'message': '"auto" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set', 'type': 'BadRequestError', 'param': None, 'code': 400}}
+Traceback (most recent call last):
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/value_agent.py", line 160, in value_agent
+    response = await agent.ainvoke(input_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3535, in ainvoke
+    async for chunk in self.astream(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3181, in astream
+    async for _ in runner.atick(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 464, in ainvoke
+    ret = await asyncio.create_task(coro, context=context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 707, in acall_model
+    response = cast(AIMessage, await static_model.ainvoke(model_input, config))  # type: ignore[union-attr]
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3255, in ainvoke
+    input_ = await coro_with_context(part(), context, create_task=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 5766, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 495, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1763, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1721, in agenerate
+    raise exceptions[0]
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 2056, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1923, in _agenerate
+    _handle_openai_bad_request(e)
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1918, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_legacy_response.py", line 384, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 2739, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1931, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1716, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': '"auto" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set', 'type': 'BadRequestError', 'param': None, 'code': 400}}
+During task with name 'agent' and id '137f2fff-c6bd-62c2-da25-73de2fb23a88'
+2026-05-11 12:04:54 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2026-05-11 12:04:54 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model Qwen3-8B
+2026-05-11 12:04:54 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2026-05-11 12:04:56 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2026-05-11 12:04:56 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2026-05-11 12:04:56 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2026-05-11 12:04:56 - src.agents.value_agent - INFO - Agent input: 请分析平安银行（股票代码：sz.000001）的估值情况。
+
+当前时间：2026年05月11日 (2026-05-11) 星期一 12:04:54
+当前日期：2026-05-11
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2026-05-11 12:04:56 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2026-05-11 12:04:56 - src.agents.value_agent - ERROR - ✗ ValueAgent: Error in MCP or agent execution: Error code: 400 - {'error': {'message': '"auto" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set', 'type': 'BadRequestError', 'param': None, 'code': 400}}
+Traceback (most recent call last):
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/value_agent.py", line 160, in value_agent
+    response = await agent.ainvoke(input_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3535, in ainvoke
+    async for chunk in self.astream(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3181, in astream
+    async for _ in runner.atick(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 464, in ainvoke
+    ret = await asyncio.create_task(coro, context=context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 707, in acall_model
+    response = cast(AIMessage, await static_model.ainvoke(model_input, config))  # type: ignore[union-attr]
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3255, in ainvoke
+    input_ = await coro_with_context(part(), context, create_task=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 5766, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 495, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1763, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1721, in agenerate
+    raise exceptions[0]
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 2056, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1923, in _agenerate
+    _handle_openai_bad_request(e)
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1918, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_legacy_response.py", line 384, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 2739, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1931, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1716, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': '"auto" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set', 'type': 'BadRequestError', 'param': None, 'code': 400}}
+During task with name 'agent' and id 'e29e4766-504c-24eb-593a-cfec3879599a'
+2026-05-11 12:21:29 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2026-05-11 12:21:29 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model Qwen3-8B
+2026-05-11 12:21:29 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2026-05-11 12:21:30 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2026-05-11 12:21:30 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2026-05-11 12:21:30 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2026-05-11 12:21:30 - src.agents.value_agent - INFO - Agent input: 请分析平安银行（股票代码：sz.000001）的估值情况。
+
+当前时间：2026年05月11日 (2026-05-11) 星期一 12:21:29
+当前日期：2026-05-11
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2026-05-11 12:21:30 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2026-05-11 12:21:31 - src.agents.value_agent - ERROR - ✗ ValueAgent: Error in MCP or agent execution: Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+Traceback (most recent call last):
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/value_agent.py", line 160, in value_agent
+    response = await agent.ainvoke(input_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3535, in ainvoke
+    async for chunk in self.astream(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3181, in astream
+    async for _ in runner.atick(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 464, in ainvoke
+    ret = await asyncio.create_task(coro, context=context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 707, in acall_model
+    response = cast(AIMessage, await static_model.ainvoke(model_input, config))  # type: ignore[union-attr]
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3255, in ainvoke
+    input_ = await coro_with_context(part(), context, create_task=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 5766, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 495, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1763, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1721, in agenerate
+    raise exceptions[0]
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 2056, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1923, in _agenerate
+    _handle_openai_bad_request(e)
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1918, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_legacy_response.py", line 384, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 2739, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1931, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1716, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+During task with name 'agent' and id 'b7c3907d-10f2-dd5d-567a-191f9c98bd53'
+2026-05-11 13:18:44 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2026-05-11 13:18:44 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model Qwen3-8B
+2026-05-11 13:18:44 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2026-05-11 13:18:45 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2026-05-11 13:18:45 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2026-05-11 13:18:45 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2026-05-11 13:18:45 - src.agents.value_agent - INFO - Agent input: 请分析Unknown（股票代码：Unknown）的估值情况。
+
+当前时间：2026年05月11日 (2026-05-11) 星期一 13:18:44
+当前日期：2026-05-11
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2026-05-11 13:18:45 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2026-05-11 13:18:45 - src.agents.value_agent - ERROR - ✗ ValueAgent: Error in MCP or agent execution: Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+Traceback (most recent call last):
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/value_agent.py", line 160, in value_agent
+    response = await agent.ainvoke(input_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3535, in ainvoke
+    async for chunk in self.astream(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3181, in astream
+    async for _ in runner.atick(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 464, in ainvoke
+    ret = await asyncio.create_task(coro, context=context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 707, in acall_model
+    response = cast(AIMessage, await static_model.ainvoke(model_input, config))  # type: ignore[union-attr]
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3255, in ainvoke
+    input_ = await coro_with_context(part(), context, create_task=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 5766, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 495, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1763, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1721, in agenerate
+    raise exceptions[0]
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 2056, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1923, in _agenerate
+    _handle_openai_bad_request(e)
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1918, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_legacy_response.py", line 384, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 2739, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1931, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1716, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+During task with name 'agent' and id '29478d7b-7e05-97ca-c62a-7e612b9569bb'
+2026-05-11 13:30:54 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2026-05-11 13:30:54 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model Qwen3-8B
+2026-05-11 13:30:54 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2026-05-11 13:30:55 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2026-05-11 13:30:55 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2026-05-11 13:30:55 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2026-05-11 13:30:55 - src.agents.value_agent - INFO - Agent input: 请分析恒生科技今天值不值得买（股票代码：Unknown）的估值情况。
+
+当前时间：2026年05月11日 (2026-05-11) 星期一 13:30:54
+当前日期：2026-05-11
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2026-05-11 13:30:55 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2026-05-11 13:30:55 - src.agents.value_agent - ERROR - ✗ ValueAgent: Error in MCP or agent execution: Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+Traceback (most recent call last):
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/value_agent.py", line 160, in value_agent
+    response = await agent.ainvoke(input_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3535, in ainvoke
+    async for chunk in self.astream(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3181, in astream
+    async for _ in runner.atick(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 464, in ainvoke
+    ret = await asyncio.create_task(coro, context=context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 707, in acall_model
+    response = cast(AIMessage, await static_model.ainvoke(model_input, config))  # type: ignore[union-attr]
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3255, in ainvoke
+    input_ = await coro_with_context(part(), context, create_task=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 5766, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 495, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1763, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1721, in agenerate
+    raise exceptions[0]
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 2056, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1923, in _agenerate
+    _handle_openai_bad_request(e)
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1918, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_legacy_response.py", line 384, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 2739, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1931, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1716, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+During task with name 'agent' and id '2aa89a55-011f-ca10-906a-dbe2469efa6d'
+2026-05-11 13:38:20 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2026-05-11 13:38:20 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model Qwen3-8B
+2026-05-11 13:38:20 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2026-05-11 13:38:22 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2026-05-11 13:38:22 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2026-05-11 13:38:22 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2026-05-11 13:38:22 - src.agents.value_agent - INFO - Agent input: 请分析Unknown（股票代码：Unknown）的估值情况。
+
+当前时间：2026年05月11日 (2026-05-11) 星期一 13:38:20
+当前日期：2026-05-11
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2026-05-11 13:38:22 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2026-05-11 13:38:22 - src.agents.value_agent - ERROR - ✗ ValueAgent: Error in MCP or agent execution: Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+Traceback (most recent call last):
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/value_agent.py", line 160, in value_agent
+    response = await agent.ainvoke(input_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3535, in ainvoke
+    async for chunk in self.astream(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3181, in astream
+    async for _ in runner.atick(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 464, in ainvoke
+    ret = await asyncio.create_task(coro, context=context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 707, in acall_model
+    response = cast(AIMessage, await static_model.ainvoke(model_input, config))  # type: ignore[union-attr]
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3255, in ainvoke
+    input_ = await coro_with_context(part(), context, create_task=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 5766, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 495, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1763, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1721, in agenerate
+    raise exceptions[0]
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 2056, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1923, in _agenerate
+    _handle_openai_bad_request(e)
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1918, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_legacy_response.py", line 384, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 2739, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1931, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1716, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+During task with name 'agent' and id 'a5b7f998-5cc8-59cd-5ad7-ca5c78dcf62e'
+2026-05-11 13:56:55 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2026-05-11 13:56:55 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model Qwen3-8B
+2026-05-11 13:56:55 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2026-05-11 13:56:56 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2026-05-11 13:56:56 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2026-05-11 13:56:56 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2026-05-11 13:56:56 - src.agents.value_agent - INFO - Agent input: 请分析美集团今天（股票代码：Unknown）的估值情况。
+
+当前时间：2026年05月11日 (2026-05-11) 星期一 13:56:54
+当前日期：2026-05-11
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2026-05-11 13:56:56 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2026-05-11 13:56:56 - src.agents.value_agent - ERROR - ✗ ValueAgent: Error in MCP or agent execution: Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+Traceback (most recent call last):
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/value_agent.py", line 160, in value_agent
+    response = await agent.ainvoke(input_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3535, in ainvoke
+    async for chunk in self.astream(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3181, in astream
+    async for _ in runner.atick(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 464, in ainvoke
+    ret = await asyncio.create_task(coro, context=context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 707, in acall_model
+    response = cast(AIMessage, await static_model.ainvoke(model_input, config))  # type: ignore[union-attr]
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3255, in ainvoke
+    input_ = await coro_with_context(part(), context, create_task=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 5766, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 495, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1763, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1721, in agenerate
+    raise exceptions[0]
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 2056, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1923, in _agenerate
+    _handle_openai_bad_request(e)
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1918, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_legacy_response.py", line 384, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 2739, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1931, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1716, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+During task with name 'agent' and id '65be84d4-3464-8ee5-e953-8b1ae18a3085'
+2026-05-11 16:14:15 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2026-05-11 16:14:15 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model Qwen3-8B
+2026-05-11 16:14:15 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2026-05-11 16:14:16 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2026-05-11 16:14:16 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2026-05-11 16:14:16 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2026-05-11 16:14:16 - src.agents.value_agent - INFO - Agent input: 请分析茅台这周（股票代码：Unknown）的估值情况。
+
+当前时间：2026年05月11日 (2026-05-11) 星期一 16:14:15
+当前日期：2026-05-11
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2026-05-11 16:14:16 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2026-05-11 16:14:16 - src.agents.value_agent - ERROR - ✗ ValueAgent: Error in MCP or agent execution: Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+Traceback (most recent call last):
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/value_agent.py", line 160, in value_agent
+    response = await agent.ainvoke(input_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3535, in ainvoke
+    async for chunk in self.astream(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3181, in astream
+    async for _ in runner.atick(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 464, in ainvoke
+    ret = await asyncio.create_task(coro, context=context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 707, in acall_model
+    response = cast(AIMessage, await static_model.ainvoke(model_input, config))  # type: ignore[union-attr]
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3255, in ainvoke
+    input_ = await coro_with_context(part(), context, create_task=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 5766, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 495, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1763, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1721, in agenerate
+    raise exceptions[0]
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 2056, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1923, in _agenerate
+    _handle_openai_bad_request(e)
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1918, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_legacy_response.py", line 384, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 2739, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1931, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1716, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+During task with name 'agent' and id '8be01188-50fd-82b4-2bc9-c8ae89f2847e'
+2026-05-11 17:12:09 - src.agents.value_agent - INFO - 🔄 ValueAgent: Starting valuation analysis using ReAct framework.
+2026-05-11 17:12:09 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ChatOpenAI with model Qwen3-8B
+2026-05-11 17:12:09 - src.agents.value_agent - INFO - 🔄 ValueAgent: Fetching MCP tools...
+2026-05-11 17:12:10 - src.agents.value_agent - INFO - ✓ ValueAgent: Successfully loaded 27 tools.
+2026-05-11 17:12:10 - src.agents.value_agent - INFO - Available tools: ['get_historical_k_data', 'get_stock_basic_info', 'get_dividend_data', 'get_adjust_factor_data', 'get_profit_data', 'get_operation_data', 'get_growth_data', 'get_balance_data', 'get_cash_flow_data', 'get_dupont_data', 'get_performance_express_report', 'get_forecast_report', 'get_stock_industry', 'get_sz50_stocks', 'get_hs300_stocks', 'get_zz500_stocks', 'get_trade_dates', 'get_all_stock', 'get_deposit_rate_data', 'get_loan_rate_data', 'get_required_reserve_ratio_data', 'get_money_supply_data_month', 'get_money_supply_data_year', 'get_latest_trading_date', 'get_market_analysis_timeframe', 'get_stock_analysis', 'crawl_news']
+2026-05-11 17:12:10 - src.agents.value_agent - INFO - 🔄 ValueAgent: Creating ReAct agent...
+2026-05-11 17:12:10 - src.agents.value_agent - INFO - Agent input: 请分析美集团最近（股票代码：Unknown）的估值情况。
+
+当前时间：2026年05月11日 (2026-05-11) 星期一 17:12:09
+当前日期：2026-05-11
+
+请进行以下估值分析：
+1. 获取公司基本信息（市值、股价等）
+2. 获取并分析主要估值指标（市盈率、市净率、市销率等）
+3. 将估值指标与行业平均水平进行对比分析
+4. 分析历史估值水平变化趋势
+5. 获取并分析股息数据和股息收益率
+6. 计算和分析内在价值
+7. 提供估值总结和投资建议
+
+重要限制：请专注于估值指标和财务数据分析，不要使用crawl_news工具获取新闻信息。估值分析应该基于财务指标、估值比率和历史数据，而不是新闻事件。
+
+请使用可用的工具获取实际数据进行分析，而不是基于假设。如果某些数据无法获取，请尝试使用不同的工具或参数组合，基于可用信息提供尽可能全面的分析。请保持回答简洁，避免冗长的描述性文字
+2026-05-11 17:12:10 - src.agents.value_agent - INFO - 🔄 ValueAgent: Calling ReAct agent...
+2026-05-11 17:12:10 - src.agents.value_agent - ERROR - ✗ ValueAgent: Error in MCP or agent execution: Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+Traceback (most recent call last):
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/value_agent.py", line 160, in value_agent
+    response = await agent.ainvoke(input_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3535, in ainvoke
+    async for chunk in self.astream(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/main.py", line 3181, in astream
+    async for _ in runner.atick(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/_internal/_runnable.py", line 464, in ainvoke
+    ret = await asyncio.create_task(coro, context=context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 707, in acall_model
+    response = cast(AIMessage, await static_model.ainvoke(model_input, config))  # type: ignore[union-attr]
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3255, in ainvoke
+    input_ = await coro_with_context(part(), context, create_task=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 5766, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 495, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1763, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1721, in agenerate
+    raise exceptions[0]
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 2056, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1923, in _agenerate
+    _handle_openai_bad_request(e)
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 1918, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_legacy_response.py", line 384, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 2739, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1931, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/openai/_base_client.py", line 1716, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}
+During task with name 'agent' and id '7f297193-49ec-e40c-241b-87ed3be11f62'

@@ -1,0 +1,33 @@
+{
+  "agent_name": "summary_agent",
+  "start_time": "2026-05-11T16:14:16.909565",
+  "start_timestamp": 1778487256.9095724,
+  "input_data": {
+    "user_query": "茅台这周的投资价值",
+    "available_analyses": {
+      "fundamental": true,
+      "technical": true,
+      "value": true,
+      "news": true
+    },
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name",
+      "value_analysis_error",
+      "value_analysis",
+      "news_analysis_error",
+      "news_analysis",
+      "technical_analysis_error",
+      "technical_analysis",
+      "fundamental_analysis_error",
+      "fundamental_analysis"
+    ]
+  },
+  "status": "started"
+}

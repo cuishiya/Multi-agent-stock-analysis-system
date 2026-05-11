@@ -1,0 +1,46 @@
+{
+  "agent_name": "value_agent",
+  "start_time": "2026-05-11T11:45:02.276798",
+  "start_timestamp": 1778471102.2768044,
+  "input_data": {
+    "user_query": "分析平安银行(000001)",
+    "stock_code": "sz.000001",
+    "company_name": "平安银行",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name",
+      "stock_code"
+    ]
+  },
+  "status": "failed",
+  "end_time": "2026-05-11T11:45:03.729939",
+  "end_timestamp": 1778471103.729947,
+  "execution_time_seconds": 1.4529178142547607,
+  "output_data": {
+    "query": "分析平安银行(000001)",
+    "current_date": "2026-05-11",
+    "current_date_cn": "2026年05月11日",
+    "current_time": "11:45:02",
+    "current_weekday_cn": "星期一",
+    "current_time_info": "2026年05月11日 (2026-05-11) 星期一 11:45:02",
+    "analysis_timestamp": "2026-05-11T11:45:02.063130",
+    "company_name": "平安银行",
+    "stock_code": "sz.000001",
+    "news_analysis_error": "Error in MCP or agent execution: Error code: 400 - {'error': {'message': '\"auto\" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set', 'type': 'BadRequestError', 'param': None, 'code': 400}}",
+    "news_analysis": "新闻分析过程中出现错误: Error code: 400 - {'error': {'message': '\"auto\" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set', 'type': 'BadRequestError', 'param': None, 'code': 400}}",
+    "technical_analysis_error": "Error in MCP or agent execution: Error code: 400 - {'error': {'message': '\"auto\" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set', 'type': 'BadRequestError', 'param': None, 'code': 400}}",
+    "technical_analysis": "技术分析过程中出现错误: Error code: 400 - {'error': {'message': '\"auto\" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set', 'type': 'BadRequestError', 'param': None, 'code': 400}}",
+    "fundamental_analysis_error": "Error in MCP or agent execution: Error code: 400 - {'error': {'message': '\"auto\" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set', 'type': 'BadRequestError', 'param': None, 'code': 400}}",
+    "fundamental_analysis": "基本面分析过程中出现错误: Error code: 400 - {'error': {'message': '\"auto\" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set', 'type': 'BadRequestError', 'param': None, 'code': 400}}",
+    "value_analysis_error": "Error in MCP or agent execution: Error code: 400 - {'error': {'message': '\"auto\" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set', 'type': 'BadRequestError', 'param': None, 'code': 400}}",
+    "value_analysis": "估值分析过程中出现错误: Error code: 400 - {'error': {'message': '\"auto\" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set', 'type': 'BadRequestError', 'param': None, 'code': 400}}"
+  },
+  "success": false,
+  "error": "Error code: 400 - {'error': {'message': '\"auto\" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set', 'type': 'BadRequestError', 'param': None, 'code': 400}}"
+}

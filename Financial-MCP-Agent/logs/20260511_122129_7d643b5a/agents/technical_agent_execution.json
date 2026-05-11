@@ -1,0 +1,44 @@
+{
+  "agent_name": "technical_agent",
+  "start_time": "2026-05-11T12:21:29.765109",
+  "start_timestamp": 1778473289.7651136,
+  "input_data": {
+    "user_query": "分析平安银行(000001)",
+    "stock_code": "sz.000001",
+    "company_name": "平安银行",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name",
+      "stock_code"
+    ]
+  },
+  "status": "failed",
+  "end_time": "2026-05-11T12:21:31.212224",
+  "end_timestamp": 1778473291.212236,
+  "execution_time_seconds": 1.4468753337860107,
+  "output_data": {
+    "query": "分析平安银行(000001)",
+    "current_date": "2026-05-11",
+    "current_date_cn": "2026年05月11日",
+    "current_time": "12:21:29",
+    "current_weekday_cn": "星期一",
+    "current_time_info": "2026年05月11日 (2026-05-11) 星期一 12:21:29",
+    "analysis_timestamp": "2026-05-11T12:21:29.556668",
+    "company_name": "平安银行",
+    "stock_code": "sz.000001",
+    "value_analysis_error": "Error in MCP or agent execution: Error code: 400 - {'error': {'message': \"This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)\", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}",
+    "value_analysis": "估值分析过程中出现错误: Error code: 400 - {'error': {'message': \"This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)\", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}",
+    "news_analysis_error": "Error in MCP or agent execution: Error code: 400 - {'error': {'message': \"This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)\", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}",
+    "news_analysis": "新闻分析过程中出现错误: Error code: 400 - {'error': {'message': \"This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)\", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}",
+    "technical_analysis_error": "Error in MCP or agent execution: Error code: 400 - {'error': {'message': \"This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)\", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}",
+    "technical_analysis": "技术分析过程中出现错误: Error code: 400 - {'error': {'message': \"This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)\", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}"
+  },
+  "success": false,
+  "error": "Error code: 400 - {'error': {'message': \"This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)\", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}"
+}

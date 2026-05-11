@@ -1,0 +1,44 @@
+{
+  "agent_name": "summary_agent",
+  "start_time": "2026-05-11T13:18:46.012420",
+  "start_timestamp": 1778476726.0124285,
+  "input_data": {
+    "user_query": "今天最推荐买A股的哪支基金",
+    "available_analyses": {
+      "fundamental": true,
+      "technical": true,
+      "value": true,
+      "news": true
+    },
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "technical_analysis_error",
+      "technical_analysis",
+      "news_analysis_error",
+      "news_analysis",
+      "value_analysis_error",
+      "value_analysis",
+      "fundamental_analysis_error",
+      "fundamental_analysis"
+    ]
+  },
+  "status": "completed",
+  "end_time": "2026-05-11T13:23:42.702564",
+  "end_timestamp": 1778477022.7025719,
+  "execution_time_seconds": 296.68979144096375,
+  "output_data": {
+    "final_report_length": 333,
+    "report_path": "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/reports/report_今天最推荐买A股的哪支基金_20260511_132342.md",
+    "report_preview": "**注意**：请确保报告中的所有时间都基于2026年05月11日的实际时间进行标注，并在报告末尾明确标注此基准时间。\n        **注意**：在生成报告时，请严格遵守上述格式和结构要求，确保每个章节都有实质性内容。\n        **注意**：由于某些分析环节出错，导致无法获取完整的分析结果，请在报告中明确指出并尽可能利用现有信息进行分析。\n        \n        **任务要求**：综合四种分析结果，完成一个关于未知公司的股票分析报告。\n        **公司名称**：未知公司 (未知股票)\n        **股票代码**：未知\n        **当前时间**：2026年05月11日 (2026-05-11) 星期一 13:18:44",
+    "llm_execution_time": 288.5423855781555,
+    "total_execution_time": 296.68979144096375
+  },
+  "success": true,
+  "error": null
+}

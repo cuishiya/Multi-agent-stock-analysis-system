@@ -1,0 +1,59 @@
+{
+  "agent_name": "summary_agent",
+  "start_time": "2026-05-11T17:12:11.140327",
+  "start_timestamp": 1778490731.1403313,
+  "input_data": {
+    "user_query": "美的集团最近怎么样",
+    "available_analyses": {
+      "fundamental": true,
+      "technical": true,
+      "value": true,
+      "news": true
+    },
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name",
+      "value_analysis_error",
+      "value_analysis",
+      "fundamental_analysis_error",
+      "fundamental_analysis",
+      "technical_analysis_error",
+      "technical_analysis",
+      "news_analysis_error",
+      "news_analysis"
+    ]
+  },
+  "status": "failed",
+  "end_time": "2026-05-11T17:12:20.450945",
+  "end_timestamp": 1778490740.4509547,
+  "execution_time_seconds": 9.310350894927979,
+  "output_data": {
+    "query": "美的集团最近怎么样",
+    "current_date": "2026-05-11",
+    "current_date_cn": "2026年05月11日",
+    "current_time": "17:12:09",
+    "current_weekday_cn": "星期一",
+    "current_time_info": "2026年05月11日 (2026-05-11) 星期一 17:12:09",
+    "analysis_timestamp": "2026-05-11T17:12:09.440728",
+    "company_name": "美集团最近",
+    "value_analysis_error": "Error in MCP or agent execution: Error code: 400 - {'error': {'message': \"This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)\", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}",
+    "value_analysis": "估值分析过程中出现错误: Error code: 400 - {'error': {'message': \"This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)\", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}",
+    "fundamental_analysis_error": "Error in MCP or agent execution: Error code: 400 - {'error': {'message': \"This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)\", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}",
+    "fundamental_analysis": "基本面分析过程中出现错误: Error code: 400 - {'error': {'message': \"This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)\", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}",
+    "technical_analysis_error": "Error in MCP or agent execution: Error code: 400 - {'error': {'message': \"This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)\", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}",
+    "technical_analysis": "技术分析过程中出现错误: Error code: 400 - {'error': {'message': \"This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)\", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}",
+    "news_analysis_error": "Error in MCP or agent execution: Error code: 400 - {'error': {'message': \"This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)\", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}",
+    "news_analysis": "新闻分析过程中出现错误: Error code: 400 - {'error': {'message': \"This model's maximum context length is 8192 tokens. However, you requested 6000 output tokens and your prompt contains at least 2193 input tokens, for a total of at least 8193 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=2193)\", 'type': 'BadRequestError', 'param': 'input_tokens', 'code': 400}}",
+    "summary_error": "Error generating final report: CUDA error: out of memory\nSearch for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+    "final_report": "\n        # Analysis Report for 美集团最近 (Unknown Stock)\n        \n        **Error encountered during report generation**: CUDA error: out of memory\nSearch for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n        \n        ## Available Analysis Fragments:\n        \n        - Fundamental Analysis: Available\n        - Technical Analysis: Available\n        - Value Analysis: Available\n        - News Analysis: Available\n        \n        Please review the individual analyses directly for more information.\n        ",
+    "report_path": "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/reports/error_report_美的集团最近怎么样_20260511_171220.md"
+  },
+  "success": false,
+  "error": "CUDA error: out of memory\nSearch for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n"
+}

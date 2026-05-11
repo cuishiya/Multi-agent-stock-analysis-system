@@ -1,0 +1,9 @@
+{
+  "agent_name": "main",
+  "start_time": "2026-05-11T13:18:44.235375",
+  "start_timestamp": 1778476724.235384,
+  "input_data": {
+    "user_query": "今天最推荐买A股的哪支基金"
+  },
+  "status": "started"
+}

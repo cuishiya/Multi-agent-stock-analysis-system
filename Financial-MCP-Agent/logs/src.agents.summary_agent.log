@@ -1,0 +1,576 @@
+2025-08-10 10:43:28 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2025-08-10 10:43:28 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: api
+2025-08-10 10:43:28 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using OpenAI API...
+2025-08-10 10:43:28 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Creating ChatOpenAI with model doubao-seed-1-6-250615
+2025-08-10 10:52:26 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2025-08-10 10:52:26 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2025-08-10 10:52:26 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2025-08-10 10:52:26 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /root/code/self-learn/FinR1...
+2025-08-10 10:52:33 - src.agents.summary_agent - INFO - ✓ FinR1 model loaded successfully
+2025-08-10 10:58:02 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Final report generated for 茅台 (sh.600519).
+2025-08-10 10:58:02 - src.agents.summary_agent - DEBUG - Final report preview: # 贵州茅台(sh.600519) 综合分析报告
+
+## 执行摘要
+贵州茅台作为中国白酒行业的领军企业，凭借强大的品牌壁垒、卓越的财务表现和稳定的现金流，展现出极高的投资吸引力。基本面分析显示其盈利能力强劲，成长性稳健，财务结构极其稳健。技术分析揭示了股价近期的宽幅震荡格局，但未出现明确的方向性突破。估值分析指出，贵州茅台的估值水平在行业内相对较低，且具备较高的股息收益率和DCF支持，内在价值被低估。新闻分析则反映了市场情绪的波动，但长期来看，品牌效应和市场需求的稳定性将助力股价回归合理区间。综合考虑，贵州茅台仍为优质的投资标的，建议投资者关注其突破信号并适时介入。
+
+## 公司概况
+贵州茅台...
+2025-08-10 10:58:02 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Report saved to /root/code/self-learn/Financial-MCP-Agent/reports/report_茅台_600519_20250810_105802.md
+2025-08-10 11:11:13 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2025-08-10 11:11:13 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2025-08-10 11:11:13 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2025-08-10 11:11:13 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /root/code/self-learn/FinR1...
+2025-08-10 11:11:20 - src.agents.summary_agent - INFO - ✓ FinR1 model loaded successfully
+2025-08-10 11:16:50 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Final report generated for 茅台 (sh.600519).
+2025-08-10 11:16:50 - src.agents.summary_agent - DEBUG - Final report preview: ...
+2025-08-10 11:16:50 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Report saved to /root/code/self-learn/Financial-MCP-Agent/reports/report_茅台_600519_20250810_111650.md
+2025-08-10 11:36:56 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2025-08-10 11:36:56 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2025-08-10 11:36:56 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2025-08-10 11:36:56 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /root/code/self-learn/FinR1...
+2025-08-10 11:37:02 - src.agents.summary_agent - INFO - ✓ FinR1 model loaded successfully
+2025-08-10 11:42:32 - src.agents.summary_agent - INFO - 截断报告在时间信息行之后，截断位置: 2118
+2025-08-10 11:42:32 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Final report generated for 茅台 (sh.600519).
+2025-08-10 11:42:32 - src.agents.summary_agent - DEBUG - Final report preview: # 茅台 (sh.600519) 综合分析报告
+
+---
+
+## 执行摘要
+贵州茅台作为中国白酒行业的龙头企业，凭借其强大的品牌壁垒和高端定位，在2024年的财务表现依旧亮眼。尽管面临宏观经济波动和行业竞争加剧的挑战，茅台通过优化产品结构和强化直销渠道，展现了卓越的抗风险能力和成长潜力。技术面上，股票在2025年上半年经历了阶段性回调，但整体趋势依然偏弱。估值方面，当前市盈率略低于历史均值，具备一定安全边际。综合来看，贵州茅台是长期价值投资者的理想选择。
+
+---
+
+## 公司概况
+- **股票代码**：sh.600519  
+- **公司名称**：贵州茅台  
+- **上市日期**：2001...
+2025-08-10 11:42:32 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Report saved to /root/code/self-learn/Financial-MCP-Agent/reports/report_茅台_600519_20250810_114232.md
+2025-08-10 20:44:12 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2025-08-10 20:44:12 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2025-08-10 20:44:12 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2025-08-10 20:44:12 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /root/code/self-learn/FinR1...
+2025-08-10 20:44:12 - src.agents.summary_agent - ERROR - ✗ Failed to load FinR1 model: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/root/code/self-learn/FinR1'. Use `repo_type` argument if needed.
+2025-08-10 20:44:12 - src.agents.summary_agent - ERROR - ✗ SummaryAgent: Error generating final report: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/root/code/self-learn/FinR1'. Use `repo_type` argument if needed.
+Traceback (most recent call last):
+  File "/root/miniconda3/lib/python3.12/site-packages/transformers/utils/hub.py", line 479, in cached_files
+    hf_hub_download(
+  File "/root/miniconda3/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/root/miniconda3/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/root/code/self-learn/FinR1'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/autodl-tmp/Finance/Financial-MCP-Agent/src/agents/summary_agent.py", line 427, in summary_agent
+    model, tokenizer = load_finr1_model()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/Finance/Financial-MCP-Agent/src/agents/summary_agent.py", line 115, in load_finr1_model
+    raise e
+  File "/root/autodl-tmp/Finance/Financial-MCP-Agent/src/agents/summary_agent.py", line 99, in load_finr1_model
+    tokenizer = AutoTokenizer.from_pretrained(model_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 1049, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 881, in get_tokenizer_config
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/transformers/utils/hub.py", line 321, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/transformers/utils/hub.py", line 532, in cached_files
+    _get_cache_file_to_return(path_or_repo_id, filename, cache_dir, revision, repo_type)
+  File "/root/miniconda3/lib/python3.12/site-packages/transformers/utils/hub.py", line 144, in _get_cache_file_to_return
+    resolved_file = try_to_load_from_cache(
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/root/miniconda3/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/root/code/self-learn/FinR1'. Use `repo_type` argument if needed.
+2025-08-10 20:44:12 - src.agents.summary_agent - INFO - ✗ SummaryAgent: Error report saved to /root/autodl-tmp/Finance/Financial-MCP-Agent/reports/error_report_腾讯_00700_20250810_204412.md
+2025-08-10 20:52:13 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2025-08-10 20:52:13 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2025-08-10 20:52:13 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2025-08-10 20:52:13 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /root/code/self-learn/FinR1...
+2025-08-10 20:52:13 - src.agents.summary_agent - ERROR - ✗ Failed to load FinR1 model: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/root/code/self-learn/FinR1'. Use `repo_type` argument if needed.
+2025-08-10 20:52:14 - src.agents.summary_agent - ERROR - ✗ SummaryAgent: Error generating final report: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/root/code/self-learn/FinR1'. Use `repo_type` argument if needed.
+Traceback (most recent call last):
+  File "/root/miniconda3/lib/python3.12/site-packages/transformers/utils/hub.py", line 479, in cached_files
+    hf_hub_download(
+  File "/root/miniconda3/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/root/miniconda3/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/root/code/self-learn/FinR1'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/autodl-tmp/Finance/Financial-MCP-Agent/src/agents/summary_agent.py", line 427, in summary_agent
+    model, tokenizer = load_finr1_model()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/Finance/Financial-MCP-Agent/src/agents/summary_agent.py", line 115, in load_finr1_model
+    raise e
+  File "/root/autodl-tmp/Finance/Financial-MCP-Agent/src/agents/summary_agent.py", line 99, in load_finr1_model
+    tokenizer = AutoTokenizer.from_pretrained(model_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 1049, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 881, in get_tokenizer_config
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/transformers/utils/hub.py", line 321, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/transformers/utils/hub.py", line 532, in cached_files
+    _get_cache_file_to_return(path_or_repo_id, filename, cache_dir, revision, repo_type)
+  File "/root/miniconda3/lib/python3.12/site-packages/transformers/utils/hub.py", line 144, in _get_cache_file_to_return
+    resolved_file = try_to_load_from_cache(
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/root/miniconda3/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/root/code/self-learn/FinR1'. Use `repo_type` argument if needed.
+2025-08-10 20:52:14 - src.agents.summary_agent - INFO - ✗ SummaryAgent: Error report saved to /root/autodl-tmp/Finance/Financial-MCP-Agent/reports/error_report_腾讯_00700_20250810_205213.md
+2025-08-10 21:03:34 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2025-08-10 21:03:34 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: api
+2025-08-10 21:03:34 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using OpenAI API...
+2025-08-10 21:03:34 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Creating ChatOpenAI with model doubao-seed-1-6-250615
+2025-08-10 21:05:08 - src.agents.summary_agent - INFO - 截断报告在'分析基准时间'行之后，截断位置: 5747
+2025-08-10 21:05:08 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Final report generated for 茅台 (sh.600519).
+2025-08-10 21:05:08 - src.agents.summary_agent - DEBUG - Final report preview: # [贵州茅台](sh.600519) 综合分析报告
+
+## 执行摘要
+贵州茅台作为中国高端白酒行业绝对龙头，展现出卓越的盈利能力、财务稳健性和市场竞争力。当前估值处于历史相对低位，基本面强劲支撑长期投资价值。技术面显示短期震荡整理但中长期趋势向好。近期公司在品牌建设、产品创新和人才储备方面持续发力，市场情绪整体积极。综合评估：**风险等级：中低**，**预期回报：中长期年化10-15%**，建议投资者现价分批建仓，适合长期价值投资者持有。
+
+## 公司概况
+贵州茅台(sh.600519)是中国高端白酒行业的绝对领导者，属于证监会行业分类中的C15酒、饮料和精制茶制造业。公司核心业务为茅台酒及...
+2025-08-10 21:05:08 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Report saved to /root/autodl-tmp/Finance/Financial-MCP-Agent/reports/report_茅台_600519_20250810_210508.md
+2025-08-19 22:28:53 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2025-08-19 22:28:53 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: api
+2025-08-19 22:28:53 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using OpenAI API...
+2025-08-19 22:28:53 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Creating ChatOpenAI with model doubao-1-5-thinking-vision-pro-250428
+2025-08-19 22:31:32 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2025-08-19 22:31:32 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: api
+2025-08-19 22:31:32 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using OpenAI API...
+2025-08-19 22:31:32 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Creating ChatOpenAI with model doubao-1-5-thinking-vision-pro-250428
+2025-08-19 22:31:44 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2025-08-19 22:31:44 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: api
+2025-08-19 22:31:44 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using OpenAI API...
+2025-08-19 22:31:44 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Creating ChatOpenAI with model doubao-1-5-thinking-vision-pro-250428
+2025-08-19 22:33:25 - src.agents.summary_agent - INFO - 截断报告在时间信息行之后，截断位置: 4487
+2025-08-19 22:33:25 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Final report generated for 茅台 (sh.600519).
+2025-08-19 22:33:25 - src.agents.summary_agent - DEBUG - Final report preview: # 茅台(sh.600519) 综合分析报告
+
+## 执行摘要  
+截至分析基准日2025-08-19，茅台技术面呈现**中期下行、短期震荡磨底**特征；新闻面以行情类资讯为主，情绪中性但短期交易情绪传导风险较高；基本面与估值分析因数据获取限制存在信息缺失。综合来看，短期需警惕情绪驱动的波动风险，中长期需锚定基本面（业绩、政策）与估值修复逻辑。投资风险等级暂评**中高风险**，预期回报需待基本面/估值数据补全后明确，建议投资者结合自身风险承受能力谨慎决策。  
+
+
+## 公司概况  
+贵州茅台（股票代码：sh.600519）是**中国白酒行业绝对龙头**，主营酱香型白酒的生产与销售，核心产品“...
+2025-08-19 22:33:25 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Report saved to /root/code/Finance/Financial-MCP-Agent/reports/report_茅台_600519_20250819_223325.md
+2025-08-19 22:33:30 - src.agents.summary_agent - INFO - 截断报告在时间信息行之后，截断位置: 4248
+2025-08-19 22:33:30 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Final report generated for 茅台 (sh.600519).
+2025-08-19 22:33:30 - src.agents.summary_agent - DEBUG - Final report preview: # 贵州茅台(sh.600519) 综合分析报告
+
+## 执行摘要  
+截至分析基准日2025-08-19，贵州茅台作为白酒行业绝对龙头，基本面展现强盈利能力与品牌护城河，技术面处于短期反弹周期，估值处于消费龙头合理区间，新闻层面反映市场持续高关注度但缺乏基本面质变信息。综合来看，**投资价值呈现“长期稳健、短期博弈性增强”特征**：  
+- 风险等级：中低风险（长期）、中风险（短期）；  
+- 预期回报：长期（1 - 3年）看业绩增长与估值修复，预期年化回报8% - 15%；短期（1 - 2月）看反弹高度，若突破1500元阻力，阶段回报或达5% - 8%。  
+
+
+## 公司概况  
+贵州茅...
+2025-08-19 22:33:30 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Report saved to /root/code/Finance/Financial-MCP-Agent/reports/report_茅台_600519_20250819_223330.md
+2025-08-19 22:36:44 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2025-08-19 22:36:44 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2025-08-19 22:36:44 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2025-08-19 22:36:44 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /root/code/self-learn/FinR1...
+2025-08-19 22:36:44 - src.agents.summary_agent - ERROR - ✗ Failed to load FinR1 model: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/root/code/self-learn/FinR1'. Use `repo_type` argument if needed.
+2025-08-19 22:36:44 - src.agents.summary_agent - ERROR - ✗ SummaryAgent: Error generating final report: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/root/code/self-learn/FinR1'. Use `repo_type` argument if needed.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/transformers/utils/hub.py", line 424, in cached_files
+    hf_hub_download(
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/root/code/self-learn/FinR1'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/code/Finance/Financial-MCP-Agent/src/agents/summary_agent.py", line 427, in summary_agent
+    model, tokenizer = load_finr1_model()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/root/code/Finance/Financial-MCP-Agent/src/agents/summary_agent.py", line 115, in load_finr1_model
+    raise e
+  File "/root/code/Finance/Financial-MCP-Agent/src/agents/summary_agent.py", line 99, in load_finr1_model
+    tokenizer = AutoTokenizer.from_pretrained(model_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/models/auto/tokenization_auto.py", line 946, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/models/auto/tokenization_auto.py", line 778, in get_tokenizer_config
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/utils/hub.py", line 266, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/utils/hub.py", line 471, in cached_files
+    _get_cache_file_to_return(path_or_repo_id, filename, cache_dir, revision) for filename in full_filenames
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/utils/hub.py", line 134, in _get_cache_file_to_return
+    resolved_file = try_to_load_from_cache(path_or_repo_id, full_filename, cache_dir=cache_dir, revision=revision)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/root/code/self-learn/FinR1'. Use `repo_type` argument if needed.
+2025-08-19 22:36:44 - src.agents.summary_agent - INFO - ✗ SummaryAgent: Error report saved to /root/code/Finance/Financial-MCP-Agent/reports/error_report_茅台_600519_20250819_223644.md
+2025-08-19 22:47:04 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2025-08-19 22:47:04 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2025-08-19 22:47:04 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2025-08-19 22:47:04 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /root/code/self-learn/FinR1...
+2025-08-19 22:47:04 - src.agents.summary_agent - ERROR - ✗ Failed to load FinR1 model: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/root/code/self-learn/FinR1'. Use `repo_type` argument if needed.
+2025-08-19 22:47:04 - src.agents.summary_agent - ERROR - ✗ SummaryAgent: Error generating final report: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/root/code/self-learn/FinR1'. Use `repo_type` argument if needed.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/transformers/utils/hub.py", line 424, in cached_files
+    hf_hub_download(
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/root/code/self-learn/FinR1'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/code/Finance/Financial-MCP-Agent/src/agents/summary_agent.py", line 427, in summary_agent
+    model, tokenizer = load_finr1_model()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/root/code/Finance/Financial-MCP-Agent/src/agents/summary_agent.py", line 115, in load_finr1_model
+    raise e
+  File "/root/code/Finance/Financial-MCP-Agent/src/agents/summary_agent.py", line 99, in load_finr1_model
+    tokenizer = AutoTokenizer.from_pretrained(model_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/models/auto/tokenization_auto.py", line 946, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/models/auto/tokenization_auto.py", line 778, in get_tokenizer_config
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/utils/hub.py", line 266, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/utils/hub.py", line 471, in cached_files
+    _get_cache_file_to_return(path_or_repo_id, filename, cache_dir, revision) for filename in full_filenames
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/utils/hub.py", line 134, in _get_cache_file_to_return
+    resolved_file = try_to_load_from_cache(path_or_repo_id, full_filename, cache_dir=cache_dir, revision=revision)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/root/code/self-learn/FinR1'. Use `repo_type` argument if needed.
+2025-08-19 22:47:04 - src.agents.summary_agent - INFO - ✗ SummaryAgent: Error report saved to /root/code/Finance/Financial-MCP-Agent/reports/error_report_茅台_600519_20250819_224704.md
+2025-08-19 22:49:32 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2025-08-19 22:49:32 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2025-08-19 22:49:32 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2025-08-19 22:49:32 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /root/code/Finance/FinR1...
+2025-08-19 22:49:40 - src.agents.summary_agent - INFO - ✓ FinR1 model loaded successfully
+2026-05-11 11:42:11 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2026-05-11 11:42:11 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2026-05-11 11:42:11 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2026-05-11 11:42:11 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /home/ubuntu/桌面/model_download/Fin_R1...
+2026-05-11 11:42:17 - src.agents.summary_agent - INFO - ✓ FinR1 model loaded successfully
+2026-05-11 11:44:27 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2026-05-11 11:44:27 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2026-05-11 11:44:27 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2026-05-11 11:44:27 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /home/ubuntu/桌面/model_download/Fin_R1...
+2026-05-11 11:44:31 - src.agents.summary_agent - ERROR - ✗ Failed to load FinR1 model: CUDA out of memory. Tried to allocate 26.00 MiB. GPU 4 has a total capacity of 23.52 GiB of which 23.69 MiB is free. Process 2562924 has 15.31 GiB memory in use. Process 2583470 has 5.61 GiB memory in use. Including non-PyTorch memory, this process has 2.52 GiB memory in use. Of the allocated memory 2.13 GiB is allocated by PyTorch, and 22.40 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-05-11 11:44:31 - src.agents.summary_agent - ERROR - ✗ SummaryAgent: Error generating final report: CUDA out of memory. Tried to allocate 26.00 MiB. GPU 4 has a total capacity of 23.52 GiB of which 23.69 MiB is free. Process 2562924 has 15.31 GiB memory in use. Process 2583470 has 5.61 GiB memory in use. Including non-PyTorch memory, this process has 2.52 GiB memory in use. Of the allocated memory 2.13 GiB is allocated by PyTorch, and 22.40 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/summary_agent.py", line 350, in summary_agent
+    model, tokenizer = load_finr1_model()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/summary_agent.py", line 115, in load_finr1_model
+    raise e
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/summary_agent.py", line 102, in load_finr1_model
+    model = AutoModelForCausalLM.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 387, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4135, in from_pretrained
+    loading_info, disk_offload_index = cls._load_pretrained_model(model, state_dict, checkpoint_files, load_config)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4255, in _load_pretrained_model
+    loading_info, disk_offload_index = convert_and_load_state_dict_in_model(
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/core_model_loading.py", line 1242, in convert_and_load_state_dict_in_model
+    realized_value = mapping.convert(
+                     ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/core_model_loading.py", line 683, in convert
+    collected_tensors = self.materialize_tensors()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/core_model_loading.py", line 659, in materialize_tensors
+    tensors = [future.result() for future in tensors if future.result() is not None]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/core_model_loading.py", line 659, in <listcomp>
+    tensors = [future.result() for future in tensors if future.result() is not None]
+                                                        ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/core_model_loading.py", line 808, in _job
+    return _materialize_copy(tensor, device, dtype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/core_model_loading.py", line 794, in _materialize_copy
+    tensor = tensor.to(device=device, dtype=dtype)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 26.00 MiB. GPU 4 has a total capacity of 23.52 GiB of which 23.69 MiB is free. Process 2562924 has 15.31 GiB memory in use. Process 2583470 has 5.61 GiB memory in use. Including non-PyTorch memory, this process has 2.52 GiB memory in use. Of the allocated memory 2.13 GiB is allocated by PyTorch, and 22.40 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-05-11 11:44:31 - src.agents.summary_agent - INFO - ✗ SummaryAgent: Error report saved to /home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/reports/error_report_平安银行_000001_20260511_114431.md
+2026-05-11 11:45:03 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2026-05-11 11:45:03 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2026-05-11 11:45:03 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2026-05-11 11:45:03 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /home/ubuntu/桌面/model_download/Fin_R1...
+2026-05-11 11:45:07 - src.agents.summary_agent - ERROR - ✗ Failed to load FinR1 model: CUDA out of memory. Tried to allocate 26.00 MiB. GPU 4 has a total capacity of 23.52 GiB of which 23.69 MiB is free. Process 2562924 has 15.31 GiB memory in use. Process 2583470 has 5.61 GiB memory in use. Including non-PyTorch memory, this process has 2.52 GiB memory in use. Of the allocated memory 2.13 GiB is allocated by PyTorch, and 22.40 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-05-11 11:45:07 - src.agents.summary_agent - ERROR - ✗ SummaryAgent: Error generating final report: CUDA out of memory. Tried to allocate 26.00 MiB. GPU 4 has a total capacity of 23.52 GiB of which 23.69 MiB is free. Process 2562924 has 15.31 GiB memory in use. Process 2583470 has 5.61 GiB memory in use. Including non-PyTorch memory, this process has 2.52 GiB memory in use. Of the allocated memory 2.13 GiB is allocated by PyTorch, and 22.40 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/summary_agent.py", line 350, in summary_agent
+    model, tokenizer = load_finr1_model()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/summary_agent.py", line 115, in load_finr1_model
+    raise e
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/summary_agent.py", line 102, in load_finr1_model
+    model = AutoModelForCausalLM.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 387, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4135, in from_pretrained
+    loading_info, disk_offload_index = cls._load_pretrained_model(model, state_dict, checkpoint_files, load_config)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4255, in _load_pretrained_model
+    loading_info, disk_offload_index = convert_and_load_state_dict_in_model(
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/core_model_loading.py", line 1242, in convert_and_load_state_dict_in_model
+    realized_value = mapping.convert(
+                     ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/core_model_loading.py", line 683, in convert
+    collected_tensors = self.materialize_tensors()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/core_model_loading.py", line 659, in materialize_tensors
+    tensors = [future.result() for future in tensors if future.result() is not None]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/core_model_loading.py", line 659, in <listcomp>
+    tensors = [future.result() for future in tensors if future.result() is not None]
+                                                        ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/core_model_loading.py", line 808, in _job
+    return _materialize_copy(tensor, device, dtype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/core_model_loading.py", line 794, in _materialize_copy
+    tensor = tensor.to(device=device, dtype=dtype)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 26.00 MiB. GPU 4 has a total capacity of 23.52 GiB of which 23.69 MiB is free. Process 2562924 has 15.31 GiB memory in use. Process 2583470 has 5.61 GiB memory in use. Including non-PyTorch memory, this process has 2.52 GiB memory in use. Of the allocated memory 2.13 GiB is allocated by PyTorch, and 22.40 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-05-11 11:45:07 - src.agents.summary_agent - INFO - ✗ SummaryAgent: Error report saved to /home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/reports/error_report_平安银行_000001_20260511_114507.md
+2026-05-11 12:03:37 - src.agents.summary_agent - WARNING - 未找到'分析基准时间'模式，返回原始报告内容
+2026-05-11 12:03:37 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Final report generated for 平安银行 (sz.000001).
+2026-05-11 12:03:37 - src.agents.summary_agent - DEBUG - Final report preview: **Note:** The current actual time is 2026-05-11 11:42:10 (Monday), so all references to data 
+        should be made relative to this date. Do not use placeholder dates or times.
+        
+        **Your task:** Despite the missing data, provide the best possible analysis using the information 
+     ...
+2026-05-11 12:03:37 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Report saved to /home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/reports/report_平安银行_000001_20260511_120337.md
+2026-05-11 12:04:56 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2026-05-11 12:04:56 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2026-05-11 12:04:56 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2026-05-11 12:04:56 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /home/ubuntu/桌面/model_download/Fin_R1...
+2026-05-11 12:05:01 - src.agents.summary_agent - INFO - ✓ FinR1 model loaded successfully
+2026-05-11 12:21:31 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2026-05-11 12:21:31 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2026-05-11 12:21:31 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2026-05-11 12:21:31 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /home/ubuntu/桌面/model_download/Fin_R1...
+2026-05-11 12:21:39 - src.agents.summary_agent - INFO - ✓ FinR1 model loaded successfully
+2026-05-11 12:26:28 - src.agents.summary_agent - INFO - 截断报告在时间信息行之后，截断位置: 6151
+2026-05-11 12:26:28 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Final report generated for 平安银行 (sz.000001).
+2026-05-11 12:26:28 - src.agents.summary_agent - DEBUG - Final report preview: **Note:** The current actual time is 2026-05-11 (Monday), 12:21:29. All time-related descriptions must be based on this date.
+        
+        **Your task:** Combine all four analyses into one comprehensive report for 平安银行 (sz.000001).
+        
+        **Report Structure:** Follow the provided templ...
+2026-05-11 12:26:28 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Report saved to /home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/reports/report_平安银行_000001_20260511_122628.md
+2026-05-11 13:18:46 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2026-05-11 13:18:46 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2026-05-11 13:18:46 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2026-05-11 13:18:46 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /home/ubuntu/桌面/model_download/Fin_R1...
+2026-05-11 13:18:54 - src.agents.summary_agent - INFO - ✓ FinR1 model loaded successfully
+2026-05-11 13:23:42 - src.agents.summary_agent - INFO - 截断报告在时间信息行之后，截断位置: 333
+2026-05-11 13:23:42 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Final report generated for Unknown Company (Unknown Stock).
+2026-05-11 13:23:42 - src.agents.summary_agent - DEBUG - Final report preview: **注意**：请确保报告中的所有时间都基于2026年05月11日的实际时间进行标注，并在报告末尾明确标注此基准时间。
+        **注意**：在生成报告时，请严格遵守上述格式和结构要求，确保每个章节都有实质性内容。
+        **注意**：由于某些分析环节出错，导致无法获取完整的分析结果，请在报告中明确指出并尽可能利用现有信息进行分析。
+        
+        **任务要求**：综合四种分析结果，完成一个关于未知公司的股票分析报告。
+        **公司名称**：未知公司 (未知股票)
+        **股票代码**：未知
+        **当前时间**：2026...
+2026-05-11 13:23:42 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Report saved to /home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/reports/report_今天最推荐买A股的哪支基金_20260511_132342.md
+2026-05-11 13:30:56 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2026-05-11 13:30:56 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2026-05-11 13:30:56 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2026-05-11 13:30:56 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /home/ubuntu/桌面/model_download/Fin_R1...
+2026-05-11 13:31:04 - src.agents.summary_agent - INFO - ✓ FinR1 model loaded successfully
+2026-05-11 13:35:56 - src.agents.summary_agent - INFO - 截断报告在时间信息行之后，截断位置: 1219
+2026-05-11 13:35:56 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Final report generated for 恒生科技今天值不值得买 (Unknown Stock).
+2026-05-11 13:35:56 - src.agents.summary_agent - DEBUG - Final report preview: **Your task** is to generate a comprehensive financial analysis report for the stock "恒生科技今天值不值得买" based on the provided analyses. Despite the technical errors encountered during each analysis phase, you must incorporate the available data into a coherent report. Ensure that the report adheres stric...
+2026-05-11 13:35:56 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Report saved to /home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/reports/report_恒生科技今天值不值得买_20260511_133556.md
+2026-05-11 13:38:22 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2026-05-11 13:38:22 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2026-05-11 13:38:22 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2026-05-11 13:38:22 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /home/ubuntu/桌面/model_download/Fin_R1...
+2026-05-11 13:38:28 - src.agents.summary_agent - INFO - ✓ FinR1 model loaded successfully
+2026-05-11 13:43:21 - src.agents.summary_agent - INFO - 截断报告在时间信息行之后，截断位置: 1387
+2026-05-11 13:43:21 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Final report generated for Unknown Company (Unknown Stock).
+2026-05-11 13:43:21 - src.agents.summary_agent - DEBUG - Final report preview: **注意**：请不要将此报告用于实际投资决策。本报告仅为示例用途，旨在展示如何整合多种分析方法。所有数据均为虚构，不代表真实市场表现。
+        
+        **公司名称**: Unknown Company  
+        **股票代码**: Unknown Stock  
+        **分析基准日期**: 2026-05-11  
+
+        **摘要**:  
+        由于系统错误导致无法获取完整分析报告，但根据现有信息，未知公司在基本面、技术面、估值及新闻分析方面均表现出色。尽管存在一些技术问题，综合来看，该公司仍具有较高的投资潜力。建议投资者关注其...
+2026-05-11 13:43:21 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Report saved to /home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/reports/report_帮我看看比亚迪_20260511_134321.md
+2026-05-11 13:56:56 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2026-05-11 13:56:56 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2026-05-11 13:56:56 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2026-05-11 13:56:56 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /home/ubuntu/桌面/model_download/Fin_R1...
+2026-05-11 13:57:04 - src.agents.summary_agent - INFO - ✓ FinR1 model loaded successfully
+2026-05-11 14:01:56 - src.agents.summary_agent - INFO - 截断报告在时间信息行之后，截断位置: 5157
+2026-05-11 14:01:56 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Final report generated for 美集团今天 (Unknown Stock).
+2026-05-11 14:01:56 - src.agents.summary_agent - DEBUG - Final report preview: **Your task** is to generate a comprehensive financial analysis report for 美的集团 (美的集团今天) stock based on the provided analyses despite the technical errors encountered during each analysis phase. Despite the errors, you must incorporate all available data into the report. The report should be structu...
+2026-05-11 14:01:56 - src.agents.summary_agent - INFO - ✓ SummaryAgent: Report saved to /home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/reports/report_美的集团今天适合投资吗_20260511_140156.md
+2026-05-11 16:14:16 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2026-05-11 16:14:16 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2026-05-11 16:14:16 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2026-05-11 16:14:16 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /home/ubuntu/桌面/model_download/Fin_R1...
+2026-05-11 16:14:26 - src.agents.summary_agent - INFO - ✓ FinR1 model loaded successfully
+2026-05-11 17:12:11 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Starting to consolidate analyses.
+2026-05-11 17:12:11 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using model choice: local
+2026-05-11 17:12:11 - src.agents.summary_agent - INFO - 🔄 SummaryAgent: Using local FinR1 model...
+2026-05-11 17:12:11 - src.agents.summary_agent - INFO - 🔄 Loading FinR1 model from /home/ubuntu/桌面/model_download/Fin_R1...
+2026-05-11 17:12:20 - src.agents.summary_agent - INFO - ✓ FinR1 model loaded successfully
+2026-05-11 17:12:20 - src.agents.summary_agent - ERROR - ✗ Error generating report with FinR1: CUDA error: out of memory
+Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2026-05-11 17:12:20 - src.agents.summary_agent - ERROR - ✗ SummaryAgent: Error generating final report: CUDA error: out of memory
+Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+Traceback (most recent call last):
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/summary_agent.py", line 364, in summary_agent
+    final_report = generate_report_with_finr1(model, tokenizer, full_prompt)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/summary_agent.py", line 166, in generate_report_with_finr1
+    raise e
+  File "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/src/agents/summary_agent.py", line 133, in generate_report_with_finr1
+    outputs = model.generate(
+              ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/generation/utils.py", line 2543, in generate
+    result = decoding_method(
+             ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/generation/utils.py", line 2736, in _sample
+    outputs = self._prefill(
+              ^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/generation/utils.py", line 3768, in _prefill
+    return self(**model_inputs, return_dict=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/accelerate/hooks.py", line 192, in new_forward
+    output = module._old_forward(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/utils/generic.py", line 876, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 462, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/utils/generic.py", line 952, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/utils/output_capturing.py", line 248, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 396, in forward
+    position_embeddings = self.rotary_emb(hidden_states, position_ids)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/accelerate/hooks.py", line 187, in new_forward
+    args, kwargs = module._hf_hook.pre_forward(module, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/accelerate/hooks.py", line 50, in wrapper
+    return wrapper._compiled_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 1181, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/accelerate/hooks.py", line 387, in pre_forward
+    return send_to_device(args, self.execution_device), send_to_device(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/accelerate/utils/operations.py", line 170, in send_to_device
+    return honor_type(
+           ^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/accelerate/utils/operations.py", line 82, in honor_type
+    return type(obj)(generator)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/accelerate/utils/operations.py", line 171, in <genexpr>
+    tensor, (send_to_device(t, device, non_blocking=non_blocking, skip_keys=skip_keys) for t in tensor)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/cui_sft/lib/python3.11/site-packages/accelerate/utils/operations.py", line 154, in send_to_device
+    return tensor.to(device, non_blocking=non_blocking)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: out of memory
+Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2026-05-11 17:12:20 - src.agents.summary_agent - INFO - ✗ SummaryAgent: Error report saved to /home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/reports/error_report_美的集团最近怎么样_20260511_171220.md

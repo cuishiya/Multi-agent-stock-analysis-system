@@ -1,0 +1,42 @@
+{
+  "agent_name": "fundamental_agent",
+  "start_time": "2026-05-11T11:42:10.552148",
+  "start_timestamp": 1778470930.5521524,
+  "input_data": {
+    "user_query": "分析平安银行(000001)",
+    "stock_code": "sz.000001",
+    "company_name": "平安银行",
+    "input_data_keys": [
+      "query",
+      "current_date",
+      "current_date_cn",
+      "current_time",
+      "current_weekday_cn",
+      "current_time_info",
+      "analysis_timestamp",
+      "company_name",
+      "stock_code"
+    ]
+  },
+  "status": "failed",
+  "end_time": "2026-05-11T11:42:11.245626",
+  "end_timestamp": 1778470931.2456315,
+  "execution_time_seconds": 0.693305253982544,
+  "output_data": {
+    "query": "分析平安银行(000001)",
+    "current_date": "2026-05-11",
+    "current_date_cn": "2026年05月11日",
+    "current_time": "11:42:10",
+    "current_weekday_cn": "星期一",
+    "current_time_info": "2026年05月11日 (2026-05-11) 星期一 11:42:10",
+    "analysis_timestamp": "2026-05-11T11:42:10.548542",
+    "company_name": "平安银行",
+    "stock_code": "sz.000001",
+    "value_analysis_error": "No MCP tools available.",
+    "technical_analysis_error": "No MCP tools available.",
+    "news_analysis_error": "No MCP tools available.",
+    "fundamental_analysis_error": "No MCP tools available."
+  },
+  "success": false,
+  "error": "No MCP tools available"
+}

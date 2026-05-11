@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-05-11T17:12:20.493273",
+  "report_path": "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/reports/error_report_美的集团最近怎么样_20260511_171220.md",
+  "report_length": 655,
+  "report_preview": "\n        # Analysis Report for 美集团最近 (Unknown Stock)\n        \n        **Error encountered during report generation**: CUDA error: out of memory\nSearch for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n        \n        ## Available Analysis Fragments:\n        \n        - Fundamental Analysis: Available\n        - Technical Analysis: Available\n        - Value Analysis: Available\n        - News Analysis: Available\n        \n        Please review the individual analyses directly for more information.\n        "
+}
