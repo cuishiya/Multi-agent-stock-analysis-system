@@ -1,0 +1,14 @@
+langgraph==0.6.6
+python-dotenv==1.1.1
+langchain-openai==0.3.30
+langchain-core==0.3.74
+langchain-mcp-adapters==0.1.9
+mcp[cli]>=1.9.2,<2
+baostock==0.9.3
+pandas==2.2.3
+pytz==2025.2
+requests>=2.32,<3
+beautifulsoup4>=4.13,<5
+tabulate>=0.9,<1
+fastapi>=0.115,<1
+uvicorn[standard]>=0.34,<1

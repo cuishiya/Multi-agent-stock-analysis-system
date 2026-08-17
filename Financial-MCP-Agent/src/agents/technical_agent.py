@@ -17,10 +17,12 @@ from src.utils.state_definition import AgentState
 from src.tools.mcp_client import get_mcp_tools
 from src.utils.logging_config import setup_logger, ERROR_ICON, SUCCESS_ICON, WAIT_ICON
 from src.utils.execution_logger import get_execution_logger
+from src.utils.environment import configure_deepseek_environment
 from dotenv import load_dotenv
 
 # 从.env文件加载环境变量
-load_dotenv(override=True)
+load_dotenv(override=False)
+configure_deepseek_environment()
 
 logger = setup_logger(__name__)
 
@@ -177,7 +179,6 @@ async def technical_agent(state: AgentState) -> AgentState:
                 logger.error(f"Response keys: {response.keys() if isinstance(response, dict) else 'Not a dict'}")
 
             logger.info(f"Final extracted analysis length: {len(final_output)} characters")
-            print(f"TECHNICALAGENT: {final_output}")
             # 7. 记录LLM交互，用于后续分析和优化
             model_config = {
                 "model": model_name,
@@ -278,4 +279,4 @@ async def test_technical_agent():
 
 if __name__ == "__main__":
     import asyncio
-    asyncio.run(test_technical_agent()) 
+    asyncio.run(test_technical_agent())

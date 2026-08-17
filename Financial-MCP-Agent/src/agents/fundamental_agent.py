@@ -17,10 +17,12 @@ from src.utils.state_definition import AgentState
 from src.tools.mcp_client import get_mcp_tools
 from src.utils.logging_config import setup_logger, ERROR_ICON, SUCCESS_ICON, WAIT_ICON
 from src.utils.execution_logger import get_execution_logger
+from src.utils.environment import configure_deepseek_environment
 from dotenv import load_dotenv
 
 # 从.env文件加载环境变量
-load_dotenv(override=True)
+load_dotenv(override=False)
+configure_deepseek_environment()
 
 logger = setup_logger(__name__)
 
@@ -203,7 +205,6 @@ async def fundamental_agent(state: AgentState) -> AgentState:
 
             logger.info(
                 f"Final extracted analysis length: {len(final_output)} characters")
-            print(f"FUNDAMENTALAGENT: {final_output}")
             # 7. 记录LLM交互，用于后续分析和优化
             model_config = {
                 "model": model_name,

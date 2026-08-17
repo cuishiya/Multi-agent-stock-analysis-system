@@ -6,17 +6,17 @@ import os
 import time
 from typing import Dict, Any
 from langchain_openai import ChatOpenAI  # 恢复OpenAI导入
-import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM
 import re
 
 from src.utils.state_definition import AgentState
 from src.utils.logging_config import setup_logger, ERROR_ICON, SUCCESS_ICON, WAIT_ICON
 from src.utils.execution_logger import get_execution_logger
+from src.utils.environment import configure_deepseek_environment
 from dotenv import load_dotenv
 
 # 从.env文件加载环境变量
-load_dotenv(override=True)
+load_dotenv(override=False)
+configure_deepseek_environment()
 
 logger = setup_logger(__name__)
 
@@ -95,11 +95,18 @@ def load_finr1_model(model_path="/home/ubuntu/桌面/model_download/Fin_R1"):
     logger.info(f"{WAIT_ICON} Loading FinR1 model from {model_path}...")
     
     try:
+        try:
+            import torch
+            from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+        except ImportError as exc:
+            raise RuntimeError(
+                "本地 FinR1 模式需要额外安装 torch、transformers 和 bitsandbytes。"
+            ) from exc
+
         # 加载tokenizer
         tokenizer = AutoTokenizer.from_pretrained(model_path)
         
         # 加载模型（4-bit 量化，约 5GB 显存）
-        from transformers import BitsAndBytesConfig
         quantization_config = BitsAndBytesConfig(
             load_in_4bit=True,
             bnb_4bit_compute_dtype=torch.float16
@@ -124,6 +131,11 @@ def generate_report_with_finr1(model, tokenizer, prompt, max_new_tokens=5000):
     """使用FinR1模型生成报告"""
     
     try:
+        try:
+            import torch
+        except ImportError as exc:
+            raise RuntimeError("本地 FinR1 模式需要额外安装 torch。") from exc
+
         # 编码输入
         inputs = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=4096)
         inputs = {k: v.to(model.device) for k, v in inputs.items()}

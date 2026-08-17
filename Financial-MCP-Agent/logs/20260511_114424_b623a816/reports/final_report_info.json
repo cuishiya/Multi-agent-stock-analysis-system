@@ -1,6 +1,0 @@
-{
-  "timestamp": "2026-05-11T11:44:31.869136",
-  "report_path": "/home/ubuntu/桌面/cui/面向A股市场的多 Agent 协同股票分析系统/Financial-MCP-Agent/reports/error_report_平安银行_000001_20260511_114431.md",
-  "report_length": 1046,
-  "report_preview": "\n        # Analysis Report for 平安银行 (sz.000001)\n        \n        **Error encountered during report generation**: CUDA out of memory. Tried to allocate 26.00 MiB. GPU 4 has a total capacity of 23.52 GiB of which 23.69 MiB is free. Process 2562924 has 15.31 GiB memory in use. Process 2583470 has 5.61 GiB memory in use. Including non-PyTorch memory, this process has 2.52 GiB memory in use. Of the allocated memory 2.13 GiB is allocated by PyTorch, and 22.40 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n        \n        ## Available Analysis Fragments:\n        \n        - Fundamental Analysis: Available\n        - Technical Analysis: Available\n        - Value Analysis: Available\n        - News Analysis: Available\n        \n        Please review the individual analyses directly for more information.\n        "
-}

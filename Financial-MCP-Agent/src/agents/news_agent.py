@@ -1,37 +1,27 @@
-"""
-NewsAnalysis Agent: Performs news analysis with sentiment and risk assessment using ReAct Agent framework.
-新闻分析 Agent：使用ReAct Agent框架进行新闻分析，包含情感分析和风险评估
-"""
+import asyncio
 import os
-import json
-from typing import Dict, Any, List, Optional
-from langchain_core.prompts import PromptTemplate
+
 from langchain_openai import ChatOpenAI
-from langchain_core.messages import SystemMessage, HumanMessage, AIMessage, BaseMessage, ToolMessage
-from langchain_core.language_models.chat_models import BaseChatModel
-from langchain_core.outputs import ChatResult, ChatGeneration
-from langgraph.prebuilt import create_react_agent
+from langchain_core.messages import HumanMessage, SystemMessage
 import time
 
 from src.utils.state_definition import AgentState
 from src.tools.mcp_client import get_mcp_tools
 from src.utils.logging_config import setup_logger, ERROR_ICON, SUCCESS_ICON, WAIT_ICON
 from src.utils.execution_logger import get_execution_logger
+from src.utils.environment import configure_deepseek_environment
 from dotenv import load_dotenv
 
 # 从.env文件加载环境变量
-load_dotenv(override=True)
-
-# LoRA 微调模型评分提示模板（与训练时格式一致）
-_LORA_SENTIMENT_TPL = "System: Forget all your previous instructions. You are a financial expert with stock recommendation experience. Based on a specific stock, score for range from 1 to 5, where 1 is negative, 2 is somewhat negative, 3 is neutral, 4 is somewhat positive, 5 is positive. 1 summarized news will be passed in each time, you will give score in format as shown below in the response from assistant.\n\nUser: News to Stock Symbol -- AAPL: Apple (AAPL) increase 22%\nAssistant: 5\n\nUser: News to Stock Symbol -- AAPL: Apple (AAPL) price decreased 30%\nAssistant: 1\n\nUser: News to Stock Symbol -- AAPL: Apple (AAPL) announced iPhone 15\nAssistant: 4\n\nUser: News to Stock Symbol -- {symbol}: {text}\nAssistant: "
-_LORA_RISK_TPL = "System: Forget all your previous instructions. You are a financial expert specializing in risk assessment for stock recommendations. Based on a specific stock, provide a risk score from 1 to 5, where: 1 indicates very low risk, 2 indicates low risk, 3 indicates moderate risk (default if the news lacks any clear indication of risk), 4 indicates high risk, and 5 indicates very high risk. 1 summarized news will be passed in each time. Provide the score in the format shown below in the response from the assistant.\n\nUser: News to Stock Symbol -- AAPL: Apple (AAPL) increases 22%\nAssistant: 3\n\nUser: News to Stock Symbol -- AAPL: Apple (AAPL) price decreased 30%\nAssistant: 4\n\nUser: News to Stock Symbol -- AAPL: Apple (AAPL) announced iPhone 15\nAssistant: 3\n\nUser: News to Stock Symbol -- {symbol}: {text}\nAssistant: "
+load_dotenv(override=False)
+configure_deepseek_environment()
 
 logger = setup_logger(__name__)
 
 
 async def news_agent(state: AgentState) -> AgentState:
     """
-    使用ReAct框架进行新闻分析，包含情感分析和风险评估，直接集成MCP工具
+    抓取一次真实新闻，并使用 DeepSeek 完成情感和风险分析。
     
     Args:
         state: 包含用户查询的当前 Agent状态
@@ -40,7 +30,7 @@ async def news_agent(state: AgentState) -> AgentState:
         更新后的AgentState，包含新闻分析结果
     """
     logger.info(
-        f"{WAIT_ICON} NewsAgent: Starting news analysis using ReAct framework.")
+        f"{WAIT_ICON} NewsAgent: Starting DeepSeek news analysis.")
 
     # 获取执行日志记录器，用于记录 Agent的执行过程
     execution_logger = get_execution_logger()
@@ -120,104 +110,85 @@ async def news_agent(state: AgentState) -> AgentState:
             tool_names = [tool.name for tool in mcp_tools]
             logger.info(f"Available tools: {tool_names}")
 
-            # 3. 创建ReAct Agent - 只传入LLM和工具
-            logger.info(
-                f"{WAIT_ICON} NewsAgent: Creating ReAct agent...")
-            agent = create_react_agent(llm, mcp_tools)
+            # 3. 只选择新闻抓取工具，避免模型在 ReAct 循环中重复调用无关工具
+            crawl_news_tool = next(
+                (tool for tool in mcp_tools if tool.name == "crawl_news"),
+                None,
+            )
+            if crawl_news_tool is None:
+                raise RuntimeError("crawl_news tool is unavailable")
 
-            # 4. 准备输入数据，构建详细的新闻分析请求
+            # 4. 抓取一次原始新闻，再统一交给 DeepSeek 分析
             stock_code = current_data.get('stock_code', 'Unknown')
             company_name = current_data.get('company_name', 'Unknown')
             current_time_info = current_data.get('current_time_info', '未知时间')
             current_date = current_data.get('current_date', '未知日期')
 
-            # 构建详细的新闻分析请求，包含多个分析维度
-            agent_input = f"""请对{company_name}（股票代码：{stock_code}）进行新闻分析。
+            tool_input = {"query": company_name, "top_k": 5}
+            logger.info(f"{WAIT_ICON} NewsAgent: Crawling news once...")
+            crawl_start_time = time.time()
+            raw_news = await asyncio.wait_for(
+                crawl_news_tool.ainvoke(tool_input),
+                timeout=90,
+            )
+            crawl_execution_time = time.time() - crawl_start_time
+            raw_news = str(raw_news)
+            execution_logger.log_tool_usage(
+                agent_name=agent_name,
+                tool_name="crawl_news",
+                tool_input=tool_input,
+                tool_output=raw_news,
+                execution_time=crawl_execution_time,
+                success=True,
+            )
+
+            agent_input = f"""请基于下面已经抓取到的真实新闻，对{company_name}（股票代码：{stock_code}）进行分析。
 
 当前时间：{current_time_info}
 当前日期：{current_date}
 
-请进行以下新闻分析：
-1. 爬取与{company_name}相关的最新新闻（至少5条）
-2. 对每条新闻进行情感分析，评估新闻对公司的情感影响（1-5分：1=负面，2=轻微负面，3=中性，4=正面，5=极正面）
-3. 对每条新闻进行风险评估，评估新闻对公司的风险影响（1-5分：1=极低风险，2=低风险，3=中等风险，4=高风险，5=极高风险）
-4. 分析新闻对股价的潜在影响
-5. 识别关键新闻事件和趋势
-6. 提供基于新闻的综合投资建议
+分析要求：
+1. 逐条列出新闻标题和关键信息；
+2. 为每条新闻给出情感评分（1=负面，2=轻微负面，3=中性，4=正面，5=极正面）；
+3. 为每条新闻给出风险评分（1=极低风险，2=低风险，3=中等风险，4=高风险，5=极高风险）；
+4. 分析新闻对股价的潜在影响，识别关键事件和趋势；
+5. 给出综合结论，并明确说明数据不足或新闻抓取失败的情况；
+6. 不要编造输入中没有出现的新闻或事实。
 
-请使用可用的工具获取实际新闻数据进行分析，确保情感分析和风险评估的准确性。如果某些新闻无法获取，请基于可用信息提供尽可能全面的分析。"""
+已抓取的新闻原文：
+{raw_news}
+"""
 
             logger.info(f"Agent input: {agent_input}")
 
-            # 5. 调用ReAct Agent - 使用正确的messages格式
+            # 5. 使用 DeepSeek 一次性完成情感、风险和综合分析
             logger.info(
-                f"{WAIT_ICON} NewsAgent: Calling ReAct agent...")
+                f"{WAIT_ICON} NewsAgent: Calling DeepSeek for news analysis...")
             start_time = time.time()
 
-            # LangGraph ReAct Agent需要messages格式的输入
-            input_data = {
-                "messages": [HumanMessage(content=agent_input)]
-            }
-
-            # 调用 Agent执行分析
-            response = await agent.ainvoke(input_data)
+            response = await asyncio.wait_for(
+                llm.ainvoke([
+                    SystemMessage(
+                        content="你是严谨的A股新闻分析师，只能依据用户提供的新闻进行分析。"
+                    ),
+                    HumanMessage(content=agent_input),
+                ]),
+                timeout=120,
+            )
 
             end_time = time.time()
             execution_time = end_time - start_time
 
             logger.info(
-                f"ReAct agent execution completed in {execution_time:.2f} seconds")
+                f"DeepSeek news analysis completed in {execution_time:.2f} seconds")
 
-            # 6. 提取分析结果
-            final_output = "No analysis generated."
-
-            if "messages" in response and isinstance(response["messages"], list):
-                messages = response["messages"]
-                # 查找最后一条AI消息，这通常包含最终的分析结果
-                ai_messages = [
-                    msg for msg in messages if isinstance(msg, AIMessage)]
-                if ai_messages:
-                    last_ai_message = ai_messages[-1]
-                    final_output = last_ai_message.content
-                    logger.info(
-                        f"Successfully extracted analysis from AI message.")
-                else:
-                    logger.warning("No AI messages found in response")
-                    # 如果没有AI消息，尝试获取所有消息的内容
-                    all_content = []
-                    for msg in messages:
-                        if hasattr(msg, 'content') and msg.content:
-                            all_content.append(str(msg.content))
-                    if all_content:
-                        final_output = "\n".join(all_content)
-            else:
-                logger.error(f"Unexpected response format: {type(response)}")
-                logger.error(
-                    f"Response keys: {response.keys() if isinstance(response, dict) else 'Not a dict'}")
+            final_output = str(response.content).strip()
+            if not final_output:
+                raise RuntimeError("DeepSeek returned an empty news analysis")
 
             logger.info(
                 f"Final extracted analysis length: {len(final_output)} characters")
-            print(f"NEWSAGENT: {final_output}")
 
-            # 使用微调 LoRA 模型对新闻进行情感/风险评分
-            try:
-                import httpx, re
-                tool_msgs = [m for m in messages if isinstance(m, ToolMessage)]
-                news_texts = [str(m.content)[:300] for m in tool_msgs if len(str(m.content)) > 50]
-                if news_texts:
-                    lora_url = f"{base_url.rstrip('/')}/completions"
-                    report_lines = ["\n\n【微调模型评分（基于 LoRA 微调模型）】"]
-                    for i, text in enumerate(news_texts[:5], 1):
-                        async with httpx.AsyncClient(timeout=15.0) as c:
-                            s_r = await c.post(lora_url, json={"model": "sentiment", "prompt": _LORA_SENTIMENT_TPL.format(symbol=stock_code, text=text), "max_tokens": 5, "temperature": 0.0})
-                            r_r = await c.post(lora_url, json={"model": "risk", "prompt": _LORA_RISK_TPL.format(symbol=stock_code, text=text), "max_tokens": 5, "temperature": 0.0})
-                        s_m = re.search(r'[1-5]', s_r.json()["choices"][0]["text"]) if s_r.status_code == 200 else None
-                        r_m = re.search(r'[1-5]', r_r.json()["choices"][0]["text"]) if r_r.status_code == 200 else None
-                        report_lines.append(f"  新闻{i}: 情感={s_m.group() if s_m else '?'}/5, 风险={r_m.group() if r_m else '?'}/5")
-                    final_output += "\n".join(report_lines)
-                    logger.info(f"{SUCCESS_ICON} NewsAgent: LoRA评分完成")
-            except Exception as e:
-                logger.warning(f"LoRA评分失败（不影响主分析）: {e}")
             # 7. 记录LLM交互，用于后续分析和优化
             model_config = {
                 "model": model_name,
@@ -228,7 +199,7 @@ async def news_agent(state: AgentState) -> AgentState:
             
             execution_logger.log_llm_interaction(
                 agent_name=agent_name,
-                interaction_type="react_agent",
+                interaction_type="deepseek_news_analysis",
                 input_messages=[{"role": "user", "content": agent_input}],
                 output_content=final_output,
                 model_config=model_config,
