@@ -10,13 +10,14 @@ from pathlib import Path
 from fastapi import FastAPI, Header, HTTPException, Query, status
 from fastapi.responses import FileResponse, Response, StreamingResponse
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel
+from dotenv import load_dotenv
+from pydantic import BaseModel, Field
 
 from src.services.query_parser import parse_stock_target
 from src.tools.mcp_config import MCP_SERVER_PATH
 from src.utils.environment import configure_deepseek_environment
 from src.web.models import AnalysisEvent, TaskSnapshot, TaskStatus
-from src.web.task_manager import TaskManager
+from src.web.task_manager import TaskCapacityError, TaskManager
 
 
 EXAMPLES = [
@@ -37,10 +38,14 @@ EXAMPLES = [
     },
 ]
 WEB_DIST_DIR = Path(__file__).resolve().parents[2] / "web" / "dist"
+ENV_FILE = Path(__file__).resolve().parents[2] / ".env"
+
+load_dotenv(ENV_FILE, override=False)
+configure_deepseek_environment()
 
 
 class AnalysisRequest(BaseModel):
-    query: str
+    query: str = Field(min_length=1, max_length=500)
 
 
 def _event_payload(event: AnalysisEvent) -> str:
@@ -62,7 +67,7 @@ def _snapshot_payload(snapshot: TaskSnapshot) -> dict:
         "error": snapshot.error,
         "events": [asdict(event) for event in snapshot.events],
     }
-    if snapshot.report_markdown:
+    if snapshot.status is TaskStatus.COMPLETED and snapshot.report_markdown:
         payload["report_download_url"] = (
             f"/api/analyses/{snapshot.task_id}/report"
         )
@@ -108,7 +113,10 @@ def create_app(
                 status_code=422,
                 detail="无法识别股票，请输入股票名称或六位股票代码。",
             )
-        task = await task_manager.create(query)
+        try:
+            task = await task_manager.create(query)
+        except TaskCapacityError as exc:
+            raise HTTPException(status_code=429, detail=str(exc)) from exc
         return _snapshot_payload(task_manager.snapshot(task.task_id))
 
     @api.get("/api/analyses/{task_id}")

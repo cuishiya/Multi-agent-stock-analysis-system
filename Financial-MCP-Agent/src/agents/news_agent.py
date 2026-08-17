@@ -10,6 +10,7 @@ from src.tools.mcp_client import get_mcp_tools
 from src.utils.logging_config import setup_logger, ERROR_ICON, SUCCESS_ICON, WAIT_ICON
 from src.utils.execution_logger import get_execution_logger
 from src.utils.environment import configure_deepseek_environment
+from src.services.progress import emit_runtime_event
 from dotenv import load_dotenv
 
 # 从.env文件加载环境变量
@@ -17,6 +18,20 @@ load_dotenv(override=False)
 configure_deepseek_environment()
 
 logger = setup_logger(__name__)
+
+
+def news_search_query(company_name: str | None, stock_code: str | None) -> str:
+    """优先按公司名检索新闻；缺少名称时使用不带交易所前缀的代码。"""
+
+    normalized_name = (company_name or "").strip()
+    if normalized_name.lower() not in {"", "unknown", "unknown company"}:
+        return normalized_name
+    normalized_code = (stock_code or "").strip()
+    for prefix in ("sh.", "sz.", "bj."):
+        if normalized_code.lower().startswith(prefix):
+            normalized_code = normalized_code[len(prefix) :]
+            break
+    return normalized_code
 
 
 async def news_agent(state: AgentState) -> AgentState:
@@ -90,6 +105,10 @@ async def news_agent(state: AgentState) -> AgentState:
 
         # 2. 获取MCP工具集
         logger.info(f"{WAIT_ICON} NewsAgent: Fetching MCP tools...")
+        await emit_runtime_event(
+            "agent_progress",
+            {"agent": "news", "message": "正在连接 MCP 新闻数据工具"},
+        )
         try:
             mcp_tools = await get_mcp_tools()
             if not mcp_tools:
@@ -105,6 +124,10 @@ async def news_agent(state: AgentState) -> AgentState:
 
             logger.info(
                 f"{SUCCESS_ICON} NewsAgent: Successfully loaded {len(mcp_tools)} tools.")
+            await emit_runtime_event(
+                "agent_progress",
+                {"agent": "news", "message": "新闻工具已就绪，正在抓取最新公开信息"},
+            )
 
             # 打印可用工具列表，便于调试
             tool_names = [tool.name for tool in mcp_tools]
@@ -124,7 +147,10 @@ async def news_agent(state: AgentState) -> AgentState:
             current_time_info = current_data.get('current_time_info', '未知时间')
             current_date = current_data.get('current_date', '未知日期')
 
-            tool_input = {"query": company_name, "top_k": 5}
+            tool_input = {
+                "query": news_search_query(company_name, stock_code),
+                "top_k": 5,
+            }
             logger.info(f"{WAIT_ICON} NewsAgent: Crawling news once...")
             crawl_start_time = time.time()
             raw_news = await asyncio.wait_for(
@@ -164,6 +190,10 @@ async def news_agent(state: AgentState) -> AgentState:
             # 5. 使用 DeepSeek 一次性完成情感、风险和综合分析
             logger.info(
                 f"{WAIT_ICON} NewsAgent: Calling DeepSeek for news analysis...")
+            await emit_runtime_event(
+                "agent_progress",
+                {"agent": "news", "message": "新闻已获取，正在进行情绪与风险分析"},
+            )
             start_time = time.time()
 
             response = await asyncio.wait_for(
@@ -267,47 +297,3 @@ async def news_agent(state: AgentState) -> AgentState:
             "messages": current_messages,
             "metadata": current_metadata
         }
-
-
-# 本地测试函数
-async def test_news_agent():
-    """新闻分析 Agent的测试函数"""
-    from src.utils.state_definition import AgentState
-    from datetime import datetime
-
-    # 准备测试数据，包含当前时间信息
-    current_datetime = datetime.now()
-    current_date_cn = current_datetime.strftime("%Y年%m月%d日")
-    current_date_en = current_datetime.strftime("%Y-%m-%d")
-    current_weekday_cn = ["星期一", "星期二", "星期三", "星期四",
-                          "星期五", "星期六", "星期日"][current_datetime.weekday()]
-    current_time = current_datetime.strftime("%H:%M:%S")
-    current_time_info = f"{current_date_cn} ({current_date_en}) {current_weekday_cn} {current_time}"
-
-    # 创建测试状态，模拟真实的用户查询
-    test_state = AgentState(
-        messages=[],
-        data={
-            "query": "分析嘉友国际的新闻情况",
-            "stock_code": "sh.603871",
-            "company_name": "嘉友国际",
-            "current_date": current_date_en,
-            "current_date_cn": current_date_cn,
-            "current_time": current_time,
-            "current_weekday_cn": current_weekday_cn,
-            "current_time_info": current_time_info,
-            "analysis_timestamp": current_datetime.isoformat()
-        },
-        metadata={}
-    )
-
-    # 运行 Agent并输出结果
-    result = await news_agent(test_state)
-    print("News Analysis Result:")
-    print(result.get("data", {}).get("news_analysis", "No analysis found"))
-
-    return result
-
-if __name__ == "__main__":
-    import asyncio
-    asyncio.run(test_news_agent())

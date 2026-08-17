@@ -18,6 +18,7 @@ from src.tools.mcp_client import get_mcp_tools
 from src.utils.logging_config import setup_logger, ERROR_ICON, SUCCESS_ICON, WAIT_ICON
 from src.utils.execution_logger import get_execution_logger
 from src.utils.environment import configure_deepseek_environment
+from src.services.progress import emit_runtime_event
 from dotenv import load_dotenv
 
 # 从.env文件加载环境变量
@@ -98,6 +99,10 @@ async def value_agent(state: AgentState) -> AgentState:
 
         # 2. 获取MCP工具集
         logger.info(f"{WAIT_ICON} ValueAgent: Fetching MCP tools...")
+        await emit_runtime_event(
+            "agent_progress",
+            {"agent": "value", "message": "正在连接 MCP 估值数据工具"},
+        )
         try:
             mcp_tools = await get_mcp_tools()
             if not mcp_tools:
@@ -113,6 +118,10 @@ async def value_agent(state: AgentState) -> AgentState:
 
             logger.info(
                 f"{SUCCESS_ICON} ValueAgent: Successfully loaded {len(mcp_tools)} tools.")
+            await emit_runtime_event(
+                "agent_progress",
+                {"agent": "value", "message": "估值数据工具已就绪，正在对比估值水平"},
+            )
 
             # 打印可用工具列表，便于调试
             tool_names = [tool.name for tool in mcp_tools]
@@ -151,6 +160,10 @@ async def value_agent(state: AgentState) -> AgentState:
 
             # 5. 调用ReAct Agent - 使用正确的messages格式
             logger.info(f"{WAIT_ICON} ValueAgent: Calling ReAct agent...")
+            await emit_runtime_event(
+                "agent_progress",
+                {"agent": "value", "message": "正在检索估值数据并调用分析模型"},
+            )
             start_time = time.time()
 
             # LangGraph ReAct Agent需要messages格式的输入
@@ -277,47 +290,3 @@ async def value_agent(state: AgentState) -> AgentState:
             "messages": current_messages,
             "metadata": current_metadata
         }
-
-
-# 本地测试函数
-async def test_value_agent():
-    """估值分析 Agent的测试函数"""
-    from src.utils.state_definition import AgentState
-    from datetime import datetime
-
-    # 准备测试数据，包含当前时间信息
-    current_datetime = datetime.now()
-    current_date_cn = current_datetime.strftime("%Y年%m月%d日")
-    current_date_en = current_datetime.strftime("%Y-%m-%d")
-    current_weekday_cn = ["星期一", "星期二", "星期三", "星期四",
-                          "星期五", "星期六", "星期日"][current_datetime.weekday()]
-    current_time = current_datetime.strftime("%H:%M:%S")
-    current_time_info = f"{current_date_cn} ({current_date_en}) {current_weekday_cn} {current_time}"
-
-    # 创建测试状态，模拟真实的用户查询
-    test_state = AgentState(
-        messages=[],
-        data={
-            "query": "分析嘉友国际的估值",
-            "stock_code": "sh.603871",
-            "company_name": "嘉友国际",
-            "current_date": current_date_en,
-            "current_date_cn": current_date_cn,
-            "current_time": current_time,
-            "current_weekday_cn": current_weekday_cn,
-            "current_time_info": current_time_info,
-            "analysis_timestamp": current_datetime.isoformat()
-        },
-        metadata={}
-    )
-
-    # 运行 Agent并输出结果
-    result = await value_agent(test_state)
-    print("Valuation Analysis Result:")
-    print(result.get("data", {}).get("value_analysis", "No analysis found"))
-
-    return result
-
-if __name__ == "__main__":
-    import asyncio
-    asyncio.run(test_value_agent())

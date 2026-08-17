@@ -15,6 +15,7 @@ export type AnalysisEventType =
   | "agent_completed"
   | "agent_failed"
   | "summary_started"
+  | "report_delta"
   | "report_completed"
   | "task_failed"
   | "heartbeat";

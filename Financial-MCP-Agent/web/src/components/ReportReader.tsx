@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 import type { AnalysisTask } from "../types";
-import { extractHeadings, headingId, sanitizeMarkdown } from "../utils/markdown";
+import { createHeadingIdFactory, extractHeadings, sanitizeMarkdown } from "../utils/markdown";
 import { ReportOutline } from "./ReportOutline";
 
 
@@ -22,8 +22,10 @@ function nodeText(children: React.ReactNode): string {
 export function ReportReader({ task, onNewAnalysis, onShowProcess }: ReportReaderProps) {
   const [copied, setCopied] = useState(false);
   const markdown = task.report_markdown || "";
+  const isComplete = task.status === "completed";
   const safeMarkdown = useMemo(() => sanitizeMarkdown(markdown), [markdown]);
   const headings = useMemo(() => extractHeadings(safeMarkdown), [safeMarkdown]);
+  const renderedHeadingId = createHeadingIdFactory();
 
   async function copyReport() {
     await navigator.clipboard.writeText(markdown);
@@ -35,10 +37,12 @@ export function ReportReader({ task, onNewAnalysis, onShowProcess }: ReportReade
     <div className="report-page">
       <header className="report-toolbar">
         <button type="button" className="text-action" onClick={onShowProcess}>← 查看执行过程</button>
-        <span className="report-status">✓ 4 个研究 Agent 已完成 · 综合报告已生成</span>
+        <span className="report-status">
+          {isComplete ? "✓ 综合报告已生成" : "汇总 Agent 正在逐段生成报告…"}
+        </span>
         <button type="button" className="text-action" onClick={() => void copyReport()}>{copied ? "已复制" : "复制全文"}</button>
         {task.report_download_url && <a className="text-action" href={task.report_download_url}>下载 Markdown</a>}
-        <button type="button" className="new-analysis" onClick={onNewAnalysis}>开始新分析 ↗</button>
+        {isComplete && <button type="button" className="new-analysis" onClick={onNewAnalysis}>开始新分析 ↗</button>}
       </header>
 
       <div className="report-document">
@@ -54,9 +58,9 @@ export function ReportReader({ task, onNewAnalysis, onShowProcess }: ReportReade
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
               components={{
-                h1: ({ children }) => <h1 id={headingId(nodeText(children))}>{children}</h1>,
-                h2: ({ children }) => <h2 id={headingId(nodeText(children))}>{children}</h2>,
-                h3: ({ children }) => <h3 id={headingId(nodeText(children))}>{children}</h3>,
+                h1: ({ children }) => <h1 id={renderedHeadingId(nodeText(children))}>{children}</h1>,
+                h2: ({ children }) => <h2 id={renderedHeadingId(nodeText(children))}>{children}</h2>,
+                h3: ({ children }) => <h3 id={renderedHeadingId(nodeText(children))}>{children}</h3>,
                 a: ({ children, href }) => <a href={href} target="_blank" rel="noreferrer noopener">{children}</a>,
               }}
             >

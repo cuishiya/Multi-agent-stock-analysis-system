@@ -67,6 +67,7 @@ const EVENT_TYPES: AnalysisEventType[] = [
   "agent_completed",
   "agent_failed",
   "summary_started",
+  "report_delta",
   "report_completed",
   "task_failed",
   "heartbeat",
@@ -81,11 +82,15 @@ interface SubscriptionHandlers {
 
 export function subscribeToAnalysis(
   taskId: string,
+  afterId: number,
   handlers: SubscriptionHandlers,
 ): () => void {
-  const source = new EventSource(
+  const url = new URL(
     `/api/analyses/${encodeURIComponent(taskId)}/events`,
+    window.location.origin,
   );
+  url.searchParams.set("after", String(Math.max(0, afterId)));
+  const source = new EventSource(url.toString());
 
   EVENT_TYPES.forEach((eventType) => {
     source.addEventListener(eventType, (rawEvent) => {

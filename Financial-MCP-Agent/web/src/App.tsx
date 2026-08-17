@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { getExamples, getHealth } from "./api";
 import { AgentOrbit } from "./components/AgentOrbit";
@@ -16,6 +16,7 @@ export default function App() {
   const [examples, setExamples] = useState<ExampleQuery[]>([]);
   const [health, setHealth] = useState<HealthStatus | null>(null);
   const [showReport, setShowReport] = useState(true);
+  const openedReportTask = useRef<string | null>(null);
   const analysis = useAnalysisTask();
 
   useEffect(() => {
@@ -24,12 +25,19 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    if (
+      analysis.task?.report_markdown &&
+      openedReportTask.current !== analysis.task.task_id
+    ) {
+      openedReportTask.current = analysis.task.task_id;
+      setShowReport(true);
+    }
     if (analysis.task?.status === "completed" && analysis.task.report_markdown) {
       setShowReport(true);
     }
-  }, [analysis.task?.report_markdown, analysis.task?.status]);
+  }, [analysis.task?.report_markdown, analysis.task?.status, analysis.task?.task_id]);
 
-  if (analysis.task?.status === "completed" && analysis.task.report_markdown && showReport) {
+  if (analysis.task?.report_markdown && showReport) {
     return (
       <div className="app-shell">
         <Sidebar active="report" />
@@ -39,6 +47,7 @@ export default function App() {
             onShowProcess={() => setShowReport(false)}
             onNewAnalysis={() => {
               analysis.reset();
+              openedReportTask.current = null;
               setQuery("");
               setShowReport(false);
             }}

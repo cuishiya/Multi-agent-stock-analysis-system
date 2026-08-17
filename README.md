@@ -7,6 +7,7 @@
 ## 核心能力
 
 - 四个研究 Agent 实时展示执行状态与日志
+- 汇总 Agent 生成报告时逐段呈现 Markdown 正文
 - LangGraph 编排分析流程，FastAPI + SSE 推送事件
 - React + TypeScript 文本型研究工作台
 - 自动生成、复制和下载 Markdown 报告
@@ -67,7 +68,7 @@ docker compose up -d --build
 docker compose ps
 ```
 
-浏览器访问：<http://服务器IP:8000>
+本机浏览器访问：<http://127.0.0.1:8000>
 
 常用命令：
 
@@ -97,7 +98,7 @@ git pull
 docker compose up -d --build
 ```
 
-请在云服务器安全组中开放 TCP 8000。正式对外服务建议使用 Nginx/Caddy 反向代理，并配置域名与 HTTPS，不要直接暴露模型密钥或 `.env`。
+Compose 默认只监听服务器本机的 `127.0.0.1:8000`，不要在安全组中直接开放 8000。需要公网访问时，请使用带访问认证的 Nginx/Caddy 反向代理，并配置域名与 HTTPS；也可以先用 `ssh -L 8000:127.0.0.1:8000 用户@服务器IP` 建立安全隧道。
 
 ## 本地开发
 

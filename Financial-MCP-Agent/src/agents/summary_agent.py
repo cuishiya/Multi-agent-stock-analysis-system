@@ -4,10 +4,14 @@ Summary Agent: Consolidates analyses from other agents into a final report.
 """
 import os
 import time
+import uuid
+from collections.abc import AsyncIterable
+from pathlib import Path
 from typing import Dict, Any
 from langchain_openai import ChatOpenAI  # 恢复OpenAI导入
 import re
 
+from src.services.progress import emit_runtime_event
 from src.utils.state_definition import AgentState
 from src.utils.logging_config import setup_logger, ERROR_ICON, SUCCESS_ICON, WAIT_ICON
 from src.utils.execution_logger import get_execution_logger
@@ -19,6 +23,71 @@ load_dotenv(override=False)
 configure_deepseek_environment()
 
 logger = setup_logger(__name__)
+
+
+async def collect_report_stream(stream: AsyncIterable[Any]) -> str:
+    """收集模型流式输出，并把每段 Markdown 实时推送给 Web 客户端。"""
+
+    parts: list[str] = []
+    pending = ""
+    async for chunk in stream:
+        content = getattr(chunk, "content", "")
+        if not isinstance(content, str) or not content:
+            continue
+        parts.append(content)
+        pending += content
+        if len(pending) >= 160 or pending.endswith("\n\n"):
+            await emit_runtime_event("report_delta", {"delta": pending})
+            pending = ""
+    if pending:
+        await emit_runtime_event("report_delta", {"delta": pending})
+    return "".join(parts)
+
+
+async def publish_report_text(report: str, *, chunk_size: int = 240) -> None:
+    """为不支持原生流式输出的本地模型分段发布报告。"""
+
+    for start in range(0, len(report), chunk_size):
+        await emit_runtime_event(
+            "report_delta",
+            {"delta": report[start : start + chunk_size]},
+        )
+
+
+def _safe_filename_part(value: str | None, fallback: str) -> str:
+    cleaned = re.sub(
+        r"[^0-9A-Za-z\u3400-\u9fff_-]+",
+        "_",
+        (value or "").strip(),
+    ).strip("._-")
+    return (cleaned[:60] or fallback)
+
+
+def build_report_filename(
+    company_name: str | None,
+    stock_code: str | None,
+    is_error: bool = False,
+) -> str:
+    """生成不可穿越目录且并发安全的报告文件名。"""
+
+    company = _safe_filename_part(company_name, "stock_analysis")
+    code = _safe_filename_part(
+        (stock_code or "").replace("sh.", "").replace("sz.", ""),
+        "unknown",
+    )
+    prefix = "error_report" if is_error else "report"
+    timestamp = time.strftime("%Y%m%d_%H%M%S")
+    unique_id = uuid.uuid4().hex[:8]
+    return f"{prefix}_{company}_{code}_{timestamp}_{unique_id}.md"
+
+
+def report_output_path(filename: str) -> Path:
+    reports_dir = Path(__file__).resolve().parents[2] / "reports"
+    reports_dir.mkdir(parents=True, exist_ok=True)
+    report_path = (reports_dir / filename).resolve()
+    if reports_dir.resolve() not in report_path.parents:
+        raise ValueError("报告路径超出 reports 目录")
+    return report_path
 
 
 def truncate_report_at_baseline_time(report_content: str, current_time_info: str) -> str:
@@ -374,6 +443,7 @@ async def summary_agent(state: AgentState) -> Dict[str, Any]:
 
             # 使用FinR1模型生成最终报告
             final_report = generate_report_with_finr1(model, tokenizer, full_prompt)
+            await publish_report_text(final_report)
 
             # 记录LLM交互执行时间
             llm_execution_time = time.time() - llm_start_time
@@ -426,9 +496,10 @@ async def summary_agent(state: AgentState) -> Dict[str, Any]:
             # 记录LLM交互开始时间
             llm_start_time = time.time()
 
-            # 调用LLM生成最终报告
-            llm_message = await llm.ainvoke(summary_prompt_messages)
-            final_report = llm_message.content
+            # 流式生成最终报告，并通过 SSE 逐段推送给前端
+            final_report = await collect_report_stream(
+                llm.astream(summary_prompt_messages)
+            )
 
             # 记录LLM交互执行时间
             llm_execution_time = time.time() - llm_start_time
@@ -454,41 +525,17 @@ async def summary_agent(state: AgentState) -> Dict[str, Any]:
             f"{SUCCESS_ICON} SummaryAgent: Final report generated for {company_name} ({stock_code}).")
         logger.debug(f"Final report preview: {final_report[:300]}...")
 
-        # 将报告保存到Markdown文件
-        timestamp = time.strftime("%Y%m%d_%H%M%S")
+        fallback_name = user_query.replace("分析", "").strip()
+        filename_company = (
+            fallback_name
+            if company_name in {"Unknown Company", "Extracted from analysis"}
+            else company_name
+        )
+        report_path = report_output_path(
+            build_report_filename(filename_company, stock_code)
+        )
 
-        # 处理公司名称和股票代码，确保文件名有意义
-        if stock_code == "Unknown Stock" or stock_code == "Extracted from analysis":
-            # 从用户查询中提取更有意义的名称
-            query_based_name = user_query.replace(
-                " ", "_").replace("分析", "").strip()
-            if not query_based_name:
-                query_based_name = "financial_analysis"
-            safe_file_prefix = f"report_{query_based_name}"
-        else:
-            # 正常情况下使用公司名称和股票代码
-            safe_company_name = company_name.replace(" ", "_").replace(".", "")
-            if safe_company_name == "Unknown_Company" or safe_company_name == "Extracted_from_analysis":
-                safe_company_name = user_query.replace(
-                    " ", "_").replace("分析", "").strip()
-                if not safe_company_name:
-                    safe_company_name = "company"
-
-            # 清理股票代码（移除可能的前缀）
-            clean_stock_code = stock_code.replace("sh.", "").replace("sz.", "")
-            safe_file_prefix = f"report_{safe_company_name}_{clean_stock_code}"
-
-        report_filename = f"{safe_file_prefix}_{timestamp}.md"
-
-        # 确保reports目录存在
-        reports_dir = os.path.join(os.path.dirname(os.path.dirname(
-            os.path.dirname(os.path.abspath(__file__)))), "reports")
-        os.makedirs(reports_dir, exist_ok=True)
-
-        report_path = os.path.join(reports_dir, report_filename)
-
-        # 将报告写入文件
-        with open(report_path, "w", encoding="utf-8") as f:
+        with report_path.open("w", encoding="utf-8") as f:
             f.write(final_report)
 
         logger.info(
@@ -496,13 +543,13 @@ async def summary_agent(state: AgentState) -> Dict[str, Any]:
 
         # 返回更新后的状态，包含最终报告
         current_data["final_report"] = final_report
-        current_data["report_path"] = report_path
+        current_data["report_path"] = str(report_path)
 
         # 记录 Agent执行成功
         total_execution_time = time.time() - agent_start_time
         execution_logger.log_agent_complete(agent_name, {
             "final_report_length": len(final_report),
-            "report_path": report_path,
+            "report_path": str(report_path),
             "report_preview": final_report,
             "llm_execution_time": llm_execution_time,
             "total_execution_time": total_execution_time
@@ -532,83 +579,25 @@ async def summary_agent(state: AgentState) -> Dict[str, Any]:
         """
         current_data["final_report"] = error_report
 
-        # 也将错误报告保存到文件
-        timestamp = time.strftime("%Y%m%d_%H%M%S")
+        fallback_name = user_query.replace("分析", "").strip()
+        filename_company = (
+            fallback_name
+            if company_name in {"Unknown Company", "Extracted from analysis"}
+            else company_name
+        )
+        report_path = report_output_path(
+            build_report_filename(filename_company, stock_code, is_error=True)
+        )
 
-        # 处理公司名称和股票代码，确保文件名有意义
-        if stock_code == "Unknown Stock" or stock_code == "Extracted from analysis":
-            # 从用户查询中提取更有意义的名称
-            query_based_name = user_query.replace(
-                " ", "_").replace("分析", "").strip()
-            if not query_based_name:
-                query_based_name = "financial_analysis"
-            safe_file_prefix = f"error_report_{query_based_name}"
-        else:
-            # 正常情况下使用公司名称和股票代码
-            safe_company_name = company_name.replace(" ", "_").replace(".", "")
-            if safe_company_name == "Unknown_Company" or safe_company_name == "Extracted_from_analysis":
-                safe_company_name = user_query.replace(
-                    " ", "_").replace("分析", "").strip()
-                if not safe_company_name:
-                    safe_company_name = "company"
-
-            # 清理股票代码（移除可能的前缀）
-            clean_stock_code = stock_code.replace("sh.", "").replace("sz.", "")
-            safe_file_prefix = f"error_report_{safe_company_name}_{clean_stock_code}"
-
-        report_filename = f"{safe_file_prefix}_{timestamp}.md"
-
-        # 确保reports目录存在
-        reports_dir = os.path.join(os.path.dirname(os.path.dirname(
-            os.path.dirname(os.path.abspath(__file__)))), "reports")
-        os.makedirs(reports_dir, exist_ok=True)
-
-        report_path = os.path.join(reports_dir, report_filename)
-
-        # 将错误报告写入文件
-        with open(report_path, "w", encoding="utf-8") as f:
+        with report_path.open("w", encoding="utf-8") as f:
             f.write(error_report)
 
         logger.info(
             f"{ERROR_ICON} SummaryAgent: Error report saved to {report_path}")
-        current_data["report_path"] = report_path
+        current_data["report_path"] = str(report_path)
 
         # 记录 Agent执行失败
         execution_logger.log_agent_complete(
             agent_name, current_data, time.time() - agent_start_time, False, str(e))
 
         return {"data": current_data, "messages": messages}
-
-
-# 本地测试函数
-async def test_summary_agent():
-    """汇总 Agent的测试函数"""
-    from src.utils.state_definition import AgentState
-
-    # 用于测试的示例状态，包含模拟分析结果
-    test_state = AgentState(
-        messages=[],
-        data={
-            "query": "分析嘉友国际",
-            "stock_code": "603871",
-            "company_name": "嘉友国际",
-            "fundamental_analysis": "嘉友国际基本面分析：公司主营业务为跨境物流、供应链贸易以及供应链增值服务。财务状况良好，负债率较低，现金流充裕。近年来业绩稳步增长，毛利率保持在行业较高水平。",
-            "technical_analysis": "嘉友国际技术分析：短期内股价处于上升通道，突破了200日均线。RSI指标显示股票尚未达到超买区域。MACD指标呈现多头形态，成交量有所放大，支持价格继续上行。",
-            "value_analysis": "嘉友国际估值分析：当前市盈率为15倍，低于行业平均水平。市净率为1.8倍，处于合理区间。与同行业公司相比，嘉友国际的估值较为合理，具有一定的投资价值。",
-            "news_analysis": "嘉友国际新闻分析：近期公司发布了2023年业绩预告，预计净利润同比增长15-25%，超出市场预期。同时，公司宣布与多家国际物流巨头达成战略合作，市场反应积极。分析师普遍上调了目标价，市场情绪偏向乐观。"
-        },
-        metadata={}
-    )
-
-    # 运行 Agent并输出结果
-    result = await summary_agent(test_state)
-    print("Summary Report:")
-    print(result.get("data", {}).get("final_report", "No report generated"))
-    print(
-        f"Report saved to: {result.get('data', {}).get('report_path', 'Not saved')}")
-
-    return result
-
-if __name__ == "__main__":
-    import asyncio
-    asyncio.run(test_summary_agent())

@@ -15,7 +15,7 @@ services:
       USE_LOCAL_MODEL: api
       TZ: Asia/Shanghai
     ports:
-      - "${APP_PORT:-8000}:8000"
+      - "${BIND_ADDRESS:-127.0.0.1}:${APP_PORT:-8000}:8000"
     volumes:
       - stock_reports:/app/Financial-MCP-Agent/reports
       - stock_logs:/app/Financial-MCP-Agent/logs

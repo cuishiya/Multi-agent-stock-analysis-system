@@ -13,6 +13,7 @@ const AGENT_NAMES: Record<string, string> = {
 function eventMessage(event: AnalysisEvent): string {
   const agent = AGENT_NAMES[String(event.payload.agent)] ?? "分析任务";
   const customMessage = typeof event.payload.message === "string" ? event.payload.message : null;
+  if (event.type === "report_delta") return "汇总 Agent 正在生成报告正文";
   switch (event.type) {
     case "task_created": return "分析任务已创建";
     case "stock_identified": return `已识别标的 ${event.payload.company_name || ""} ${event.payload.stock_code || ""}`.trim();
@@ -29,7 +30,9 @@ function eventMessage(event: AnalysisEvent): string {
 
 
 export function EventLog({ events }: { events: AnalysisEvent[] }) {
-  const visible = events.filter((event) => event.type !== "heartbeat").slice(-8);
+  const visible = events
+    .filter((event) => event.type !== "heartbeat" && event.type !== "report_delta")
+    .slice(-8);
   return (
     <section className="event-panel">
       <header className="panel-header compact"><div><span className="eyebrow">EXECUTION TRACE</span><h2>执行日志</h2></div><span>最近 {visible.length} 条</span></header>

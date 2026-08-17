@@ -34,21 +34,30 @@ export function useAnalysisTask() {
   }, []);
 
   const connect = useCallback(
-    (taskId: string) => {
+    (taskId: string, afterId = 0) => {
       stopSubscription();
       setConnectionWarning(false);
-      closeSubscription.current = subscribeToAnalysis(taskId, {
+      closeSubscription.current = subscribeToAnalysis(taskId, afterId, {
         onEvent: (event) => {
           setConnectionWarning(false);
           setEvents((current) => {
             if (current.some((item) => item.id === event.id)) return current;
             return [...current, event].sort((a, b) => a.id - b.id);
           });
-          setTask((current) =>
-            current
-              ? { ...current, status: "running", updated_at: event.timestamp }
-              : current,
-          );
+          setTask((current) => {
+            if (!current) return current;
+            const delta = event.type === "report_delta" && typeof event.payload.delta === "string"
+              ? event.payload.delta
+              : "";
+            return {
+              ...current,
+              status: "running",
+              updated_at: event.timestamp,
+              report_markdown: delta
+                ? `${current.report_markdown || ""}${delta}`
+                : current.report_markdown,
+            };
+          });
           if (event.type === "report_completed" || event.type === "task_failed") {
             void refreshTask(taskId).finally(stopSubscription);
           }
@@ -65,7 +74,8 @@ export function useAnalysisTask() {
       void refreshTask(taskId)
         .then((snapshot) => {
           if (snapshot.status === "queued" || snapshot.status === "running") {
-            connect(taskId);
+            const lastEvent = snapshot.events[snapshot.events.length - 1];
+            connect(taskId, lastEvent?.id ?? 0);
           }
         })
         .catch(() => sessionStorage.removeItem(SESSION_TASK_KEY));
@@ -83,7 +93,8 @@ export function useAnalysisTask() {
         setTask(created);
         setEvents(created.events);
         sessionStorage.setItem(SESSION_TASK_KEY, created.task_id);
-        connect(created.task_id);
+        const lastEvent = created.events[created.events.length - 1];
+        connect(created.task_id, lastEvent?.id ?? 0);
       } catch (reason) {
         setError(reason instanceof Error ? reason.message : "无法创建分析任务。");
       }

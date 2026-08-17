@@ -24,11 +24,15 @@ function statusFor(agent: AgentKey, events: AnalysisEvent[]): AgentStatus {
 
 
 export function AgentOrbit({ events }: { events: AnalysisEvent[] }) {
-  const summaryStatus: AgentStatus = events.some((event) => event.type === "report_completed")
-    ? "已完成"
-    : events.some((event) => event.type === "summary_started")
-      ? "分析中"
-      : "等待中";
+  const summaryStatus: AgentStatus = events.some(
+    (event) => event.type === "agent_failed" && event.payload.agent === "summary",
+  )
+    ? "失败"
+    : events.some((event) => event.type === "report_completed")
+      ? "已完成"
+      : events.some((event) => event.type === "summary_started")
+        ? "分析中"
+        : "等待中";
 
   return (
     <section className="orbit-panel" aria-labelledby="orbit-title">

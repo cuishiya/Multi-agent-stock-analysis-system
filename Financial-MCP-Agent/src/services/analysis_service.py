@@ -7,6 +7,7 @@ from typing import Any, Awaitable, Callable, Mapping
 
 from langgraph.graph import END, StateGraph
 
+from src.services.progress import bind_event_sink, reset_event_sink
 from src.services.query_parser import StockTarget, build_initial_state, parse_stock_target
 from src.utils.state_definition import AgentState
 
@@ -56,6 +57,10 @@ def _tracked_agent(
 ) -> AgentFunction:
     async def run(state: AgentState) -> dict[str, Any]:
         await emit("agent_started", {"agent": name})
+        await emit(
+            "agent_progress",
+            {"agent": name, "message": "正在连接数据源并执行分析"},
+        )
         try:
             result = await agent(state)
         except Exception as exc:
@@ -68,7 +73,19 @@ def _tracked_agent(
                 }
             }
 
-        await emit("agent_completed", {"agent": name})
+        result_data = result.get("data", {}) if isinstance(result, Mapping) else {}
+        error = result_data.get(f"{analysis_key}_error")
+        if error:
+            await emit(
+                "agent_failed",
+                {"agent": name, "message": str(error)[:500]},
+            )
+        else:
+            await emit(
+                "agent_progress",
+                {"agent": name, "message": "分析结果已返回，正在汇总"},
+            )
+            await emit("agent_completed", {"agent": name})
         return result
 
     return run
@@ -98,7 +115,17 @@ def build_analysis_graph(agents: AnalysisAgents, emit: EventSink):
 
     async def run_summary(state: AgentState) -> dict[str, Any]:
         await emit("summary_started", {"agent": "summary"})
-        return await agents.summary(state)
+        result = await agents.summary(state)
+        result_data = result.get("data", {}) if isinstance(result, Mapping) else {}
+        error = result_data.get("summary_error")
+        if error:
+            await emit(
+                "agent_failed",
+                {"agent": "summary", "message": str(error)[:500]},
+            )
+        else:
+            await emit("agent_completed", {"agent": "summary"})
+        return result
 
     workflow.add_node("summarizer", run_summary)
     workflow.set_entry_point("start_node")
@@ -137,7 +164,11 @@ async def run_analysis(
         },
     )
     graph = build_analysis_graph(agents or _default_agents(), emit)
-    final_state = await graph.ainvoke(build_initial_state(query, target))
+    event_sink_token = bind_event_sink(emit)
+    try:
+        final_state = await graph.ainvoke(build_initial_state(query, target))
+    finally:
+        reset_event_sink(event_sink_token)
     data = final_state.get("data", {}) if final_state else {}
     report_markdown = data.get("final_report")
     if not isinstance(report_markdown, str) or not report_markdown.strip():
