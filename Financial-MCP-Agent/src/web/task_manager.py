@@ -43,12 +43,16 @@ class TaskManager:
         *,
         max_pending_tasks: int = 4,
         max_stored_tasks: int = 50,
+        task_timeout_seconds: float = 900.0,
     ):
         if max_pending_tasks < 1 or max_stored_tasks < max_pending_tasks:
             raise ValueError("任务容量配置无效")
+        if task_timeout_seconds <= 0:
+            raise ValueError("任务超时时间必须大于 0")
         self._runner = runner or run_analysis
         self._max_pending_tasks = max_pending_tasks
         self._max_stored_tasks = max_stored_tasks
+        self._task_timeout_seconds = task_timeout_seconds
         self._execution_slot = asyncio.Semaphore(1)
         self._tasks: dict[str, AnalysisTask] = {}
         self._conditions: dict[str, asyncio.Condition] = {}
@@ -198,7 +202,8 @@ class TaskManager:
             try:
                 initialize_execution_logger()
                 logger_initialized = True
-                result = await self._runner(task.query, emit)
+                async with asyncio.timeout(self._task_timeout_seconds):
+                    result = await self._runner(task.query, emit)
                 task.report_markdown = result.report_markdown
                 task.report_path = result.report_path
                 task.target = {
@@ -217,6 +222,15 @@ class TaskManager:
                             "report_length": len(result.report_markdown),
                         },
                     )
+            except TimeoutError:
+                message = (
+                    f"分析执行超时（上限 {self._task_timeout_seconds:g} 秒），"
+                    "请稍后重试。"
+                )
+                execution_error = message
+                task.error = message
+                task.status = TaskStatus.FAILED
+                await self._append_event(task_id, "task_failed", {"message": message})
             except Exception as exc:
                 message = _safe_message(exc)
                 execution_error = message

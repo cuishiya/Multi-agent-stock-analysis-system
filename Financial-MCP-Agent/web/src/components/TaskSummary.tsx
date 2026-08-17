@@ -1,6 +1,15 @@
 import type { AnalysisEvent, AnalysisTask, HealthStatus } from "../types";
 
 
+const RESEARCH_AGENTS = new Set(["fundamental", "technical", "value", "news"]);
+
+
+function isResearchAgentEvent(event: AnalysisEvent) {
+  return typeof event.payload.agent === "string"
+    && RESEARCH_AGENTS.has(event.payload.agent);
+}
+
+
 export function TaskSummary({
   task,
   events,
@@ -10,8 +19,12 @@ export function TaskSummary({
   events: AnalysisEvent[];
   health: HealthStatus | null;
 }) {
-  const completed = events.filter((event) => event.type === "agent_completed").length;
-  const failed = events.filter((event) => event.type === "agent_failed").length;
+  const completed = events.filter((event) => (
+    event.type === "agent_completed" && isResearchAgentEvent(event)
+  )).length;
+  const failed = events.filter((event) => (
+    event.type === "agent_failed" && isResearchAgentEvent(event)
+  )).length;
   const progress = Math.min(((completed + failed) / 4) * 72 + (events.some((event) => event.type === "summary_started") ? 18 : 0) + (task?.status === "completed" ? 10 : 0), 100);
   return (
     <aside className="task-summary" aria-label="任务摘要">

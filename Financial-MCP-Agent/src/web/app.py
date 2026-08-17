@@ -74,12 +74,23 @@ def _snapshot_payload(snapshot: TaskSnapshot) -> dict:
     return payload
 
 
+def _configured_task_timeout() -> float:
+    raw_value = os.getenv("STOCK_AGENT_TASK_TIMEOUT_SECONDS", "900")
+    try:
+        timeout = float(raw_value)
+    except ValueError:
+        return 900.0
+    return timeout if timeout > 0 else 900.0
+
+
 def create_app(
     manager: TaskManager | None = None,
     *,
     heartbeat_interval: float = 15.0,
 ) -> FastAPI:
-    task_manager = manager or TaskManager()
+    task_manager = manager or TaskManager(
+        task_timeout_seconds=_configured_task_timeout(),
+    )
     api = FastAPI(title="股票分析 Agent 系统", version="1.0.0")
     api.state.task_manager = task_manager
 
