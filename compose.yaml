@@ -1,0 +1,31 @@
+name: stock-analysis-agent
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: multi-agent-stock-analysis:latest
+    container_name: stock-analysis-agent
+    init: true
+    env_file:
+      - ./Financial-MCP-Agent/.env
+    environment:
+      SUMMARY_USE_LOCAL_MODEL: api
+      USE_LOCAL_MODEL: api
+      TZ: Asia/Shanghai
+    ports:
+      - "${BIND_ADDRESS:-127.0.0.1}:${APP_PORT:-8000}:8000"
+    volumes:
+      - stock_reports:/app/Financial-MCP-Agent/reports
+      - stock_logs:/app/Financial-MCP-Agent/logs
+    restart: unless-stopped
+    stop_grace_period: 30s
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+
+volumes:
+  stock_reports:
+  stock_logs:

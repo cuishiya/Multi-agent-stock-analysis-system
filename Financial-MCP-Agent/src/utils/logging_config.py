@@ -39,7 +39,7 @@ def setup_logger(name: str, log_dir: Optional[str] = None) -> logging.Logger:
 
     # 创建控制台处理器
     console_handler = logging.StreamHandler()
-    console_handler.setLevel(logging.INFO)  # 控制台只显示INFO及以上级别
+    console_handler.setLevel(logging.WARNING)  # 控制台只显示警告及错误
 
     # 创建格式化器
     formatter = logging.Formatter(

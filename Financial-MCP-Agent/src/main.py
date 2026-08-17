@@ -53,6 +53,7 @@ from langgraph.graph import StateGraph, END
 
 # 环境变量和系统相关导入
 from dotenv import load_dotenv
+from src.utils.environment import configure_deepseek_environment
 import argparse
 import asyncio
 import re
@@ -69,7 +70,8 @@ logger = setup_logger(__name__)
 sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 
 # 加载环境变量（从.env文件）
-load_dotenv(override=True)
+load_dotenv(override=False)
+configure_deepseek_environment()
 
 # 调试：打印关键环境变量以验证配置
 logger.info(f"Environment Variables Loaded:")
